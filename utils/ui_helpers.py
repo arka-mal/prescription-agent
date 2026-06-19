@@ -132,11 +132,13 @@ def render_layout_panel(layout: LayoutResult, image_bytes: bytes = None):
                 y1 = bb.get("y1", 1) * h
 
                 color = box_colors.get(seg.label, (148, 163, 184, 100))
-                draw.rectangle([x0, y0, x1, y1], outline=color, width=3, fill=color)
+                outline_color = color[:3] + (220,)   # full opacity outline
+                fill_color    = color[:3] + (35,)    # very transparent fill
+                draw.rectangle([x0, y0, x1, y1], outline=outline_color, width=3, fill=fill_color)
 
                 label_text = SEGMENT_LABELS.get(seg.label, seg.label)
                 try:
-                    draw.text((x0 + 4, max(y0 - 18, 0)), label_text, fill=(0, 0, 0, 255))
+                    draw.text((x0 + 4, y0 + 4), label_text, fill=(0, 0, 0, 255))
                 except Exception:
                     pass
 

@@ -153,16 +153,6 @@ def run_ocr_agent(
         )
 
     st.write(f"DEBUG: OCR extracted {len(blocks)} blocks")
-    # Convert blocks to dicts to avoid Streamlit serialization issues
-    blocks_as_dicts = [
-        {
-            "text": b.text,
-            "bbox": b.bbox,
-            "confidence": b.confidence,
-            "is_handwritten_guess": b.is_handwritten_guess,
-        }
-        for b in blocks
-    ]
     
     return OCRResult(
         raw_text=full_text,
@@ -172,5 +162,5 @@ def run_ocr_agent(
         mixed_script_flags=mixed_flags,
         overall_confidence=confidence,
         word_count=word_count,
-        blocks=blocks_as_dicts,
+        blocks=blocks,
     )

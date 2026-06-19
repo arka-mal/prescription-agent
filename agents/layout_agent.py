@@ -139,40 +139,67 @@ Return the structured JSON segmentation."""
         )
     # Symbolic matching: map each segment to OCR blocks for bbox extraction
     def _match_segment_to_blocks(segment_text: str, ocr_blocks: list) -> Optional[dict]:
-        """Find OCR blocks whose text appears in segment_text, union their bboxes.
-        Uses fuzzy matching: a block matches if any of its words appear in the segment."""
         if not segment_text or not ocr_blocks:
             return None
-    
+
         segment_lower = segment_text.lower()
         matched = []
-    
+
+        # Minimum word length to use as a match key — filters out "a", "of", "mg" etc.
+        MIN_WORD_LEN = 4
+
         for b in ocr_blocks:
-            block_text_raw = b.get("text") if isinstance(b, dict) else b.text
-            if not block_text_raw or len(block_text_raw.strip()) < 1:
+            block_text_raw = b.get("text") if isinstance(b, dict) else getattr(b, "text", None)
+            if not block_text_raw or len(block_text_raw.strip()) < 2:
                 continue
             block_text = block_text_raw.strip().lower()
-            # Match if block text is in segment OR if any word from block is in segment
-            if block_text in segment_lower or any(word in segment_lower for word in block_text.split()):
+
+            # Exact substring match: block text appears in segment
+            if block_text in segment_lower:
                 matched.append(b)
-    
+                continue
+
+            # Word match: only use words long enough to be meaningful
+            meaningful_words = [w for w in block_text.split() if len(w) >= MIN_WORD_LEN]
+            if meaningful_words and all(w in segment_lower for w in meaningful_words):
+                matched.append(b)
+
         if not matched:
             return None
-    
-        x0 = min(b.get("bbox")[0] if isinstance(b, dict) else b.bbox[0] for b in matched)
-        y0 = min(b.get("bbox")[1] if isinstance(b, dict) else b.bbox[1] for b in matched)
-        x1 = max(b.get("bbox")[2] if isinstance(b, dict) else b.bbox[2] for b in matched)
-        y1 = max(b.get("bbox")[3] if isinstance(b, dict) else b.bbox[3] for b in matched)
+
+        # Union the bounding boxes of matched blocks
+        bboxes = []
+        for b in matched:
+            bbox = b.get("bbox") if isinstance(b, dict) else getattr(b, "bbox", None)
+            if bbox and len(bbox) == 4:
+                bboxes.append(bbox)
+
+        if not bboxes:
+            return None
+
+        x0 = min(bb[0] for bb in bboxes)
+        y0 = min(bb[1] for bb in bboxes)
+        x1 = max(bb[2] for bb in bboxes)
+        y1 = max(bb[3] for bb in bboxes)
+
+        # Sanity check: reject degenerate boxes (less than 2% of image in either dim)
+        if (x1 - x0) < 0.02 or (y1 - y0) < 0.02:
+            return None
+
         return {"x0": x0, "y0": y0, "x1": x1, "y1": y1}
 
-    st.write(f"DEBUG: Layout received {len(blocks_to_use or [])} blocks, processed {len(segments)} segments")
-    for seg in segments:
-        st.write(f"  - {seg.label}: bbox={'YES' if seg.bounding_box else 'NO'}")
+    
 
     # Apply bbox matching to each segment
     if blocks_to_use:
         for seg in segments:
             seg.bounding_box = _match_segment_to_blocks(seg.raw_text, blocks_to_use)
+
+    st.write(f"DEBUG: Layout received {len(blocks_to_use or [])} blocks, processed {len(segments)} segments")
+    for seg in segments:
+        st.write(f"  - {seg.label}: bbox={'YES' if seg.bounding_box else 'NO'}")
+
+
 
     return LayoutResult(
         segments=segments,

@@ -134,12 +134,15 @@ Return the structured JSON segmentation."""
         """Find OCR blocks whose text appears in segment_text, union their bboxes."""
         if not segment_text or not ocr_blocks:
             return None
+    
+        # Match if OCR block text appears IN the segment (not vice versa)
         matched = [
             b for b in ocr_blocks
-            if b.text and b.text.strip() and b.text.strip() in segment_text
+            if b.text and len(b.text.strip()) > 1 and b.text.strip().lower() in segment_text.lower()
         ]
         if not matched:
             return None
+    
         x0 = min(b.bbox[0] for b in matched)
         y0 = min(b.bbox[1] for b in matched)
         x1 = max(b.bbox[2] for b in matched)

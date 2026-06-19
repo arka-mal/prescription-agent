@@ -62,6 +62,7 @@ def run_pipeline(
         return result
 
     # ── Stage 2: Layout Segmentation ─────────────────────────────────────────
+    print(f"DEBUG Pipeline: passing {len(result.ocr.blocks)} blocks to layout agent")
     try:
         result.layout = run_layout_agent(
             raw_ocr_text=result.ocr.raw_text,

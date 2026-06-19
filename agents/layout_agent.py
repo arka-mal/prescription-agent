@@ -64,6 +64,10 @@ def run_layout_agent(
     ocr_blocks: Optional[list] = None,
     
 ) -> LayoutResult:
+    print(f"DEBUG Layout START: ocr_blocks type={type(ocr_blocks)}, len={len(ocr_blocks) if ocr_blocks else 'None'}")
+    if ocr_blocks:
+        print(f"DEBUG Layout: First block type: {type(ocr_blocks[0])}")
+        print(f"DEBUG Layout: First block attrs: {dir(ocr_blocks[0])[:5]}")
     """
     Layout agent: takes raw OCR text, returns segmented LayoutResult.
 

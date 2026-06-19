@@ -148,9 +148,10 @@ Return the structured JSON segmentation."""
         matched = []
     
         for b in ocr_blocks:
-            if not b.text or len(b.text.strip()) < 1:
+            block_text_raw = b.get("text") if isinstance(b, dict) else b.text
+            if not block_text_raw or len(block_text_raw.strip()) < 1:
                 continue
-            block_text = b.text.strip().lower()
+            block_text = block_text_raw.strip().lower()
             # Match if block text is in segment OR if any word from block is in segment
             if block_text in segment_lower or any(word in segment_lower for word in block_text.split()):
                 matched.append(b)
@@ -158,10 +159,10 @@ Return the structured JSON segmentation."""
         if not matched:
             return None
     
-        x0 = min(b.bbox[0] for b in matched)
-        y0 = min(b.bbox[1] for b in matched)
-        x1 = max(b.bbox[2] for b in matched)
-        y1 = max(b.bbox[3] for b in matched)
+        x0 = min(b.get("bbox")[0] if isinstance(b, dict) else b.bbox[0] for b in matched)
+        y0 = min(b.get("bbox")[1] if isinstance(b, dict) else b.bbox[1] for b in matched)
+        x1 = max(b.get("bbox")[2] if isinstance(b, dict) else b.bbox[2] for b in matched)
+        y1 = max(b.get("bbox")[3] if isinstance(b, dict) else b.bbox[3] for b in matched)
         return {"x0": x0, "y0": y0, "x1": x1, "y1": y1}
 
     st.write(f"DEBUG: Layout received {len(blocks_to_use or [])} blocks, processed {len(segments)} segments")

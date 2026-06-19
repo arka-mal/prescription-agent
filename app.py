@@ -278,7 +278,7 @@ if uploaded_file:
 
         with tab2:
             if layout_result:
-                render_layout_panel(layout_result)
+                render_layout_panel(layout_result, image_bytes=image_bytes)
 
         with tab3:
             if rx_result:

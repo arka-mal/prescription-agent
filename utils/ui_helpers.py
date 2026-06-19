@@ -40,14 +40,14 @@ SEGMENT_COLORS = {
 }
 
 SEGMENT_LABELS = {
-    "patient_header":    "👤 Patient Header",
-    "drug_list":         "💊 Drug List",
-    "dosage_column":     "⚖️ Dosage / Sig",
-    "duration_column":   "📅 Duration",
-    "prescriber_footer": "🏥 Prescriber",
-    "clinical_notes":    "📋 Clinical Notes",
-    "annotation":        "✏️ Annotations",
-    "unknown":           "❓ Unknown",
+    "patient_header":    "Patient Header",
+    "drug_list":         "Drug List",
+    "dosage_column":     "Dosage / Sig",
+    "duration_column":   "Duration",
+    "prescriber_footer": "Prescriber",
+    "clinical_notes":    "Clinical Notes",
+    "annotation":        "Annotations",
+    "unknown":           "Unknown",
 }
 
 
@@ -100,8 +100,6 @@ def render_ocr_panel(ocr: OCRResult):
 def render_layout_panel(layout: LayoutResult, image_bytes: bytes = None):
     st.markdown("### 🗂️ Layout Agent Output")
 
-    st.write(f"DEBUG: image_bytes={'present' if image_bytes else 'MISSING'}, segments={len(layout.segments)}")
-
     st.metric("Overall Confidence", conf_badge(layout.overall_confidence))
 
     # Draw bounding boxes on image if available
@@ -111,34 +109,45 @@ def render_layout_panel(layout: LayoutResult, image_bytes: bytes = None):
             draw = ImageDraw.Draw(img, "RGBA")
             w, h = img.size
 
+            # Full alpha for outlines — fill will be reduced separately
             box_colors = {
-                "patient_header": (59, 130, 246, 100),      # blue
-                "drug_list": (34, 197, 94, 100),            # green
-                "dosage_column": (234, 179, 8, 100),        # yellow
-                "duration_column": (236, 72, 153, 100),     # pink
-                "prescriber_footer": (139, 92, 246, 100),   # purple
-                "clinical_notes": (249, 115, 22, 100),      # orange
-                "annotation": (100, 116, 139, 100),         # slate
-                "unknown": (148, 163, 184, 100),            # light slate
+                "patient_header":    (59,  130, 246, 255),
+                "drug_list":         (34,  197, 94,  255),
+                "dosage_column":     (234, 179, 8,   255),
+                "duration_column":   (236, 72,  153, 255),
+                "prescriber_footer": (139, 92,  246, 255),
+                "clinical_notes":    (249, 115, 22,  255),
+                "annotation":        (100, 116, 139, 255),
+                "unknown":           (148, 163, 184, 255),
             }
 
             for seg in layout.segments:
                 if not seg.bounding_box:
                     continue
                 bb = seg.bounding_box
-                x0 = bb.get("x0", 0) * w
-                y0 = bb.get("y0", 0) * h
-                x1 = bb.get("x1", 1) * w
-                y1 = bb.get("y1", 1) * h
+                x0 = int(bb.get("x0", 0) * w)
+                y0 = int(bb.get("y0", 0) * h)
+                x1 = int(bb.get("x1", 1) * w)
+                y1 = int(bb.get("y1", 1) * h)
 
-                color = box_colors.get(seg.label, (148, 163, 184, 100))
-                outline_color = color[:3] + (220,)   # full opacity outline
-                fill_color    = color[:3] + (35,)    # very transparent fill
-                draw.rectangle([x0, y0, x1, y1], outline=outline_color, width=3, fill=fill_color)
+                outline_rgba = box_colors.get(seg.label, (148, 163, 184, 255))
+                fill_rgba    = outline_rgba[:3] + (30,)  # nearly transparent fill
 
+                # Draw box
+                draw.rectangle([x0, y0, x1, y1], outline=outline_rgba, width=3, fill=fill_rgba)
+
+                # Draw label as a solid pill above the box
                 label_text = SEGMENT_LABELS.get(seg.label, seg.label)
                 try:
-                    draw.text((x0 + 4, y0 + 4), label_text, fill=(0, 0, 0, 255))
+                    label_x = x0 + 4
+                    label_y = max(y0 - 20, 2)
+                    text_w  = len(label_text) * 7
+                    # Solid background behind the label text
+                    draw.rectangle(
+                        [label_x - 2, label_y - 2, label_x + text_w, label_y + 14],
+                        fill=outline_rgba[:3] + (200,)
+                    )
+                    draw.text((label_x, label_y), label_text, fill=(255, 255, 255, 255))
                 except Exception:
                     pass
 
@@ -148,7 +157,6 @@ def render_layout_panel(layout: LayoutResult, image_bytes: bytes = None):
 
     st.markdown("**Semantic Segments**")
 
-    st.markdown("**Semantic Segments**")
     for seg in layout.segments:
         color = SEGMENT_COLORS.get(seg.label, "#f8fafc")
         label_display = SEGMENT_LABELS.get(seg.label, seg.label)
@@ -178,10 +186,10 @@ def render_layout_panel(layout: LayoutResult, image_bytes: bytes = None):
     with st.expander("📄 Consolidated Field Text"):
         fields = {
             "Patient Header": layout.patient_header_text,
-            "Drug List": layout.drug_list_text,
-            "Dosage/Sig": layout.dosage_column_text,
-            "Prescriber": layout.prescriber_footer_text,
-            "Annotations": layout.annotation_text,
+            "Drug List":      layout.drug_list_text,
+            "Dosage/Sig":     layout.dosage_column_text,
+            "Prescriber":     layout.prescriber_footer_text,
+            "Annotations":    layout.annotation_text,
         }
         for label, text in fields.items():
             if text:
@@ -270,10 +278,10 @@ def render_prescription_panel(rx: PrescriptionResult):
 
                     if t.frequency_per_day > 0:
                         dose_cols = st.columns(4)
-                        dose_cols[0].metric("Morning", t.morning)
+                        dose_cols[0].metric("Morning",   t.morning)
                         dose_cols[1].metric("Afternoon", t.afternoon)
-                        dose_cols[2].metric("Evening", t.evening)
-                        dose_cols[3].metric("Night", t.night)
+                        dose_cols[2].metric("Evening",   t.evening)
+                        dose_cols[3].metric("Night",     t.night)
 
                     if t.food_relation:
                         st.caption(f"🍽️ {t.food_relation.capitalize()}")

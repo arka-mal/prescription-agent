@@ -62,12 +62,7 @@ def run_layout_agent(
     groq_api_key: str,
     model: str = "llama-3.3-70b-versatile",
     ocr_blocks: Optional[list] = None,
-    
 ) -> LayoutResult:
-    print(f"DEBUG Layout START: ocr_blocks type={type(ocr_blocks)}, len={len(ocr_blocks) if ocr_blocks else 'None'}")
-    if ocr_blocks:
-        print(f"DEBUG Layout: First block type: {type(ocr_blocks[0])}")
-        print(f"DEBUG Layout: First block attrs: {dir(ocr_blocks[0])[:5]}")
     """
     Layout agent: takes raw OCR text, returns segmented LayoutResult.
 
@@ -75,6 +70,7 @@ def run_layout_agent(
         raw_ocr_text: Full text string from OCR agent
         groq_api_key: Groq API key
         model: Groq model to use
+        ocr_blocks: List of OCRBlock objects from ocr_agent
 
     Returns:
         LayoutResult with labeled segments
@@ -111,7 +107,6 @@ Return the structured JSON segmentation."""
     try:
         data = json.loads(raw_content)
     except json.JSONDecodeError:
-        # Fallback: return minimal result with raw text
         return LayoutResult(
             segments=[
                 LayoutSegment(
@@ -137,37 +132,39 @@ Return the structured JSON segmentation."""
                 confidence=_conf(seg.get("confidence", "medium")),
             )
         )
-    # Symbolic matching: map each segment to OCR blocks for bbox extraction
+
     def _match_segment_to_blocks(segment_text: str, ocr_blocks: list) -> Optional[dict]:
+        """Find OCR blocks whose text matches segment_text and union their bboxes."""
         if not segment_text or not ocr_blocks:
             return None
 
         segment_lower = segment_text.lower()
         matched = []
 
-        # Minimum word length to use as a match key — filters out "a", "of", "mg" etc.
-        MIN_WORD_LEN = 4
+        MIN_WORD_LEN = 4   # ignore short words like "a", "of", "mg" for word-path matching
+        MIN_BLOCK_LEN = 3  # ignore blocks shorter than 3 chars entirely
 
         for b in ocr_blocks:
             block_text_raw = b.get("text") if isinstance(b, dict) else getattr(b, "text", None)
-            if not block_text_raw or len(block_text_raw.strip()) < 2:
+            if not block_text_raw or len(block_text_raw.strip()) < MIN_BLOCK_LEN:
                 continue
             block_text = block_text_raw.strip().lower()
 
-            # Exact substring match: block text appears in segment
+            # Path 1: full block text is a substring of the segment
             if block_text in segment_lower:
                 matched.append(b)
                 continue
 
-            # Word match: only use words long enough to be meaningful
+            # Path 2: ALL meaningful words in the block appear in the segment
+            # Requires at least 2 meaningful words to avoid single-word false positives
             meaningful_words = [w for w in block_text.split() if len(w) >= MIN_WORD_LEN]
-            if meaningful_words and all(w in segment_lower for w in meaningful_words):
+            if len(meaningful_words) >= 2 and all(w in segment_lower for w in meaningful_words):
                 matched.append(b)
 
         if not matched:
             return None
 
-        # Union the bounding boxes of matched blocks
+        # Union the bounding boxes of all matched blocks
         bboxes = []
         for b in matched:
             bbox = b.get("bbox") if isinstance(b, dict) else getattr(b, "bbox", None)
@@ -182,24 +179,21 @@ Return the structured JSON segmentation."""
         x1 = max(bb[2] for bb in bboxes)
         y1 = max(bb[3] for bb in bboxes)
 
-        # Sanity check: reject degenerate boxes (less than 2% of image in either dim)
+        # Reject degenerate boxes (less than 2% of image in either dimension)
         if (x1 - x0) < 0.02 or (y1 - y0) < 0.02:
             return None
 
         return {"x0": x0, "y0": y0, "x1": x1, "y1": y1}
-
-    
 
     # Apply bbox matching to each segment
     if blocks_to_use:
         for seg in segments:
             seg.bounding_box = _match_segment_to_blocks(seg.raw_text, blocks_to_use)
 
-    st.write(f"DEBUG: Layout received {len(blocks_to_use or [])} blocks, processed {len(segments)} segments")
+    # Debug output — shown after bbox assignment so values are accurate
+    st.write(f"DEBUG: Layout received {len(blocks_to_use)} blocks, processed {len(segments)} segments")
     for seg in segments:
         st.write(f"  - {seg.label}: bbox={'YES' if seg.bounding_box else 'NO'}")
-
-
 
     return LayoutResult(
         segments=segments,

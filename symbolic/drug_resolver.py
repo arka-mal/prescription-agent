@@ -7,7 +7,11 @@ This is pure symbolic — no LLM involved.
 
 import json
 import os
+import difflib
 from typing import Optional, Tuple
+
+FUZZY_MATCH_THRESHOLD = 0.82
+MIN_FUZZY_KEY_LEN = 4
 
 _KB_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "drug_kb.json")
 
@@ -18,31 +22,37 @@ def _load_kb():
 _KB = _load_kb()
 
 
-def resolve_brand(name: str) -> Tuple[Optional[str], Optional[str]]:
+def resolve_brand(name: str) -> Tuple[Optional[str], Optional[str], bool]:
     """
-    Given a drug name (possibly brand), return (brand, generic).
-    Returns (None, name) if not found in KB — treat as possibly already generic.
-    
-    Returns: (brand_name, generic_name)
+    Given a drug name (possibly brand), return (brand, generic, kb_verified).
+    kb_verified is True only if matched against the KB (exact or fuzzy above
+    threshold). False means the name passed through unconfirmed.
+
+    Returns: (brand_name, generic_name, kb_verified)
     """
     if not name:
-        return None, None
+        return None, None, False
 
     normalized = name.strip().lower()
-    # remove strength/form suffixes e.g. "Augmentin 625" → "augmentin"
     normalized = normalized.split()[0] if normalized else normalized
 
     b2g = _KB.get("brand_to_generic", {})
 
     if normalized in b2g:
-        return name.strip(), b2g[normalized]
+        return name.strip(), b2g[normalized], True
 
-    # Partial match fallback
-    for brand, generic in b2g.items():
-        if brand in normalized or normalized in brand:
-            return name.strip(), generic
+    if len(normalized) >= MIN_FUZZY_KEY_LEN:
+        best_brand, best_generic, best_ratio = None, None, 0.0
+        for brand, generic in b2g.items():
+            if len(brand) < MIN_FUZZY_KEY_LEN:
+                continue
+            ratio = difflib.SequenceMatcher(None, normalized, brand).ratio()
+            if ratio > best_ratio:
+                best_brand, best_generic, best_ratio = brand, generic, ratio
+        if best_ratio >= FUZZY_MATCH_THRESHOLD:
+            return name.strip(), best_generic, True
 
-    return None, name.strip()   # assume it might already be generic
+    return None, name.strip(), False
 
 
 def normalize_form(form_raw: str) -> str:

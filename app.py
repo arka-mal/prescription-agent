@@ -17,6 +17,10 @@ import io
 
 from utils.pipeline import run_pipeline
 from utils.ui_helpers import render_ocr_panel, render_layout_panel, render_prescription_panel
+from config import (
+    USE_BACKEND_GROQ_KEY, USE_BACKEND_GCP_CREDS,
+    GROQ_API_KEY, GCP_SERVICE_ACCOUNT_INFO, GROQ_MODEL_DEFAULT,
+)
 
 # ── Page config ───────────────────────────────────────────────────────────────
 
@@ -72,25 +76,33 @@ st.markdown("""
 with st.sidebar:
     st.markdown("### ⚙️ Configuration")
 
-    groq_key = st.text_input(
-        "Groq API Key",
-        type="password",
-        placeholder="gsk_...",
-        help="Get your free key at console.groq.com",
-    )
+    if USE_BACKEND_GROQ_KEY:
+        groq_key = GROQ_API_KEY
+    else:
+        groq_key = st.text_input(
+            "Groq API Key",
+            type="password",
+            placeholder="gsk_...",
+            help="Get your free key at console.groq.com",
+        )
 
-    st.markdown("**Google Cloud Vision Credentials**")
-    gcp_json_upload = st.file_uploader(
-        "Upload GCP service account JSON",
-        type=["json"],
-        help="Download from GCP Console → IAM → Service Accounts → Keys",
-    )
+    gcp_json_upload = None
+    if not USE_BACKEND_GCP_CREDS:
+        st.markdown("**Google Cloud Vision Credentials**")
+        gcp_json_upload = st.file_uploader(
+            "Upload GCP service account JSON",
+            type=["json"],
+            help="Download from GCP Console → IAM → Service Accounts → Keys",
+        )
 
-    groq_model = st.selectbox(
-        "Groq Model",
-        ["llama-3.3-70b-versatile", "llama3-70b-8192", "mixtral-8x7b-32768"],
-        help="llama-3.3-70b recommended for best extraction quality",
-    )
+    if USE_BACKEND_GROQ_KEY and USE_BACKEND_GCP_CREDS:
+        groq_model = GROQ_MODEL_DEFAULT
+    else:
+        groq_model = st.selectbox(
+            "Groq Model",
+            ["llama-3.3-70b-versatile", "llama3-70b-8192", "mixtral-8x7b-32768"],
+            help="llama-3.3-70b recommended for best extraction quality",
+        )
 
     st.divider()
     st.markdown("### 🏗️ Pipeline Architecture")
@@ -134,9 +146,13 @@ with st.sidebar:
 
 # ── Main Area ─────────────────────────────────────────────────────────────────
 
-# Save GCP credentials to a temp file if uploaded
+# Resolve GCP credentials: backend secrets take priority, else use manual upload
 gcp_credentials_path = None
-if gcp_json_upload:
+gcp_credentials_info = None
+
+if USE_BACKEND_GCP_CREDS:
+    gcp_credentials_info = GCP_SERVICE_ACCOUNT_INFO
+elif gcp_json_upload:
     tmp = tempfile.NamedTemporaryFile(delete=False, suffix=".json", mode="wb")
     tmp.write(gcp_json_upload.read())
     tmp.flush()
@@ -183,10 +199,10 @@ if uploaded_file:
     if run_btn:
         # Validate keys
         if not groq_key:
-            st.error("❌ Please enter your Groq API key in the sidebar.")
+            st.error("❌ Groq API key is not configured.")
             st.stop()
-        if not gcp_credentials_path:
-            st.error("❌ Please upload your GCP service account JSON in the sidebar.")
+        if not gcp_credentials_path and not gcp_credentials_info:
+            st.error("❌ GCP credentials are not configured.")
             st.stop()
 
         image_bytes = uploaded_file.getvalue()
@@ -207,7 +223,11 @@ if uploaded_file:
 
             # Stage 1: OCR
             try:
-                ocr_result = run_ocr_agent(image_bytes, credentials_path=gcp_credentials_path)
+                ocr_result = run_ocr_agent(
+                    image_bytes,
+                    credentials_path=gcp_credentials_path,
+                    credentials_info=gcp_credentials_info,
+                )
                 ocr_status.markdown('<div class="pipeline-step done">🔍 OCR / HTR Agent ✅</div>', unsafe_allow_html=True)
             except Exception as e:
                 ocr_status.markdown('<div class="pipeline-step error">🔍 OCR / HTR Agent ❌</div>', unsafe_allow_html=True)

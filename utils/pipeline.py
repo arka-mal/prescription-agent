@@ -26,6 +26,7 @@ def run_pipeline(
     image_bytes: bytes,
     groq_api_key: str,
     gcp_credentials_path: Optional[str] = None,
+    gcp_credentials_info: Optional[dict] = None,
     groq_model: str = "llama-3.3-70b-versatile",
 ) -> PipelineResult:
     """
@@ -34,7 +35,8 @@ def run_pipeline(
     Args:
         image_bytes: Raw bytes of the prescription image
         groq_api_key: Groq API key for layout + prescription agents
-        gcp_credentials_path: Path to GCP service account JSON (optional)
+        gcp_credentials_path: Path to GCP service account JSON (local/testing use)
+        gcp_credentials_info: GCP service account dict from st.secrets (production use)
         groq_model: Groq model identifier
 
     Returns:
@@ -44,7 +46,11 @@ def run_pipeline(
 
     # ── Stage 1: OCR / HTR ───────────────────────────────────────────────────
     try:
-        result.ocr = run_ocr_agent(image_bytes, credentials_path=gcp_credentials_path)
+        result.ocr = run_ocr_agent(
+            image_bytes,
+            credentials_path=gcp_credentials_path,
+            credentials_info=gcp_credentials_info,
+        )
     except Exception as e:
         result.error_stage = "OCR Agent"
         result.error_message = str(e)

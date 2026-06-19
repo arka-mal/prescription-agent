@@ -183,7 +183,7 @@ def run_prescription_agent(
         sig_raw = m.get("sig_raw", "")
 
         # SYMBOLIC: brand → generic resolution
-        brand, generic = resolve_brand(drug_name_raw)
+        brand, generic, kb_verified = resolve_brand(drug_name_raw)
 
         # SYMBOLIC: sig parsing → structured timing
         timing = parse_sig(sig_raw) if sig_raw else TimingStructure()
@@ -192,17 +192,29 @@ def run_prescription_agent(
         form = normalize_form(m.get("form", ""))
         route = normalize_route(m.get("route", ""))
 
+        med_flags = [m["notes"]] if m.get("notes") else []
+
+        reported_conf = _conf(m.get("confidence", "medium"))
+        if not kb_verified:
+            med_flags.append(
+                f"Drug name '{drug_name_raw}' not found in drug knowledge base — "
+                "unverified, may be an OCR/extraction error"
+            )
+            if reported_conf == ConfidenceLevel.HIGH:
+                reported_conf = ConfidenceLevel.MEDIUM
+
         med = MedicationEntry(
             original_text=m.get("original_text", drug_name_raw),
             brand_name=brand,
             generic_name=generic,
+            kb_verified=kb_verified,
             form=form or m.get("form"),
             strength=m.get("strength"),
             route=route or m.get("route"),
             timing=timing,
             sig_raw=sig_raw,
-            confidence=_conf(m.get("confidence", "medium")),
-            flags=[m["notes"]] if m.get("notes") else [],
+            confidence=reported_conf,
+            flags=med_flags,
         )
         medications.append(med)
 

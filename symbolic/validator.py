@@ -64,9 +64,8 @@ def validate_and_flag(result: PrescriptionResult) -> PrescriptionResult:
     for i, med in enumerate(result.medications):
         med_label = med.brand_name or med.generic_name or f"Drug #{i+1}"
 
-        # Generic name resolution failed
-        if not med.generic_name and not med.brand_name:
-            med.flags.append("Drug name unclear")
+        # Generic name resolution failed — name never matched the KB
+        if not med.kb_verified:
             hitl = True
 
         # Timing not parsed

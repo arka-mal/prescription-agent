@@ -185,6 +185,12 @@ def render_prescription_panel(rx: PrescriptionResult):
         for i, med in enumerate(rx.medications):
             conf_color = CONF_COLOR[med.confidence]
             with st.container():
+                unverified_badge = (
+                    '<span style="font-size:0.7rem;font-weight:700;color:#92400e;'
+                    'background:#fef3c7;border-radius:4px;padding:2px 6px;margin-left:8px;">'
+                    '⚠ UNVERIFIED</span>'
+                ) if not med.kb_verified else ''
+
                 st.markdown(
                     f"""
                     <div style="
@@ -194,7 +200,7 @@ def render_prescription_panel(rx: PrescriptionResult):
                         margin-bottom:12px;
                     ">
                         <div style="font-size:1rem;font-weight:700;color:#111827;">
-                            {i+1}. {med.brand_name or med.generic_name or med.original_text}
+                            {i+1}. {med.brand_name or med.generic_name or med.original_text}{unverified_badge}
                         </div>
                         {f'<div style="font-size:0.82rem;color:#6b7280;">Generic: <b>{med.generic_name}</b></div>' if med.generic_name and med.brand_name else ''}
                     </div>

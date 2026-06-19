@@ -15,7 +15,10 @@ from google.oauth2 import service_account
 from models.rx_schema import OCRResult, ConfidenceLevel
 
 
-def _get_vision_client(credentials_path: Optional[str] = None):
+def _get_vision_client(credentials_path: Optional[str] = None, credentials_info: Optional[dict] = None):
+    if credentials_info:
+        creds = service_account.Credentials.from_service_account_info(credentials_info)
+        return vision.ImageAnnotatorClient(credentials=creds)
     if credentials_path and os.path.exists(credentials_path):
         creds = service_account.Credentials.from_service_account_file(credentials_path)
         return vision.ImageAnnotatorClient(credentials=creds)
@@ -65,19 +68,21 @@ def _compute_confidence(responses) -> ConfidenceLevel:
 
 def run_ocr_agent(
     image_bytes: bytes,
-    credentials_path: Optional[str] = None
+    credentials_path: Optional[str] = None,
+    credentials_info: Optional[dict] = None,
 ) -> OCRResult:
     """
     Main OCR/HTR agent entry point.
     
     Args:
         image_bytes: Raw image bytes (JPEG, PNG, TIFF, PDF page)
-        credentials_path: Path to GCP service account JSON
+        credentials_path: Path to GCP service account JSON (local/testing use)
+        credentials_info: GCP service account dict, e.g. from st.secrets (production use)
     
     Returns:
         OCRResult with raw text, script detection, confidence
     """
-    client = _get_vision_client(credentials_path)
+    client = _get_vision_client(credentials_path, credentials_info)
 
     image = vision.Image(content=image_bytes)
 

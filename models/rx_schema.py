@@ -25,6 +25,7 @@ class MedicationEntry(BaseModel):
     original_text: str              # raw text from prescription
     brand_name: Optional[str] = None
     generic_name: Optional[str] = None
+    kb_verified: bool = False 
     form: Optional[str] = None      # tablet, capsule, syrup etc.
     strength: Optional[str] = None  # e.g. "500mg", "250mg/5ml"
     route: Optional[str] = None

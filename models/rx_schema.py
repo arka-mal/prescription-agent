@@ -77,6 +77,7 @@ class LayoutResult(BaseModel):
     patient_header_text: Optional[str] = None
     drug_list_text: Optional[str] = None
     dosage_column_text: Optional[str] = None
+    duration_column_text: Optional[str] = None
     prescriber_footer_text: Optional[str] = None
     annotation_text: Optional[str] = None
     overall_confidence: ConfidenceLevel = ConfidenceLevel.MEDIUM

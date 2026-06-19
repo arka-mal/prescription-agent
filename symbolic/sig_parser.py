@@ -55,6 +55,9 @@ DURATION_PATTERNS = [
     (re.compile(r'(\d+)\s*mths?', re.IGNORECASE), lambda m: int(m.group(1)) * 30),
     (re.compile(r'for\s+(\d+)', re.IGNORECASE), lambda m: int(m.group(1))),
     (re.compile(r'x\s*(\d+)', re.IGNORECASE), lambda m: int(m.group(1))),
+    (re.compile(r'(\d+)\s*/\s*7\b'), lambda m: int(m.group(1))),
+    (re.compile(r'(\d+)\s*/\s*52\b'), lambda m: int(m.group(1)) * 7),
+    (re.compile(r'(\d+)\s*/\s*12\b'), lambda m: int(m.group(1)) * 30),
 ]
 
 # Dash pattern: "1-0-1", "1-1-1", "0-0-1", "1-0-0-1" etc.
@@ -91,9 +94,10 @@ def _extract_duration(sig: str):
     return None, None
 
 
-def parse_sig(sig_raw: str) -> TimingStructure:
+def parse_sig(sig_raw: str, duration_raw: Optional[str] = None) -> TimingStructure:
     """
-    Main entry point. Takes a raw sig string and returns a TimingStructure.
+    Main entry point. Takes a raw sig string and optional separate duration string,
+    returns a TimingStructure.
     
     Examples:
         "1-0-1 pc"         → morning=1, afternoon=0, night=1, after food
@@ -101,13 +105,18 @@ def parse_sig(sig_raw: str) -> TimingStructure:
         "TDS after food"   → freq=3, food=after food
         "½ tab OD hs"      → morning=0, night=0.5 (bedtime)
         "twice daily"      → freq=2
+        "BD", "8 Days"     → freq=2, duration=8 (separate columns)
     """
-    if not sig_raw:
+    if not sig_raw and not duration_raw:
         return TimingStructure()
 
-    sig = sig_raw.strip()
+    sig = (sig_raw or "").strip()
     food = _extract_food_relation(sig)
     duration_days, duration_label = _extract_duration(sig)
+    
+    # If no duration found in sig, try the separate duration field
+    if duration_days is None and duration_raw:
+        duration_days, duration_label = _extract_duration(duration_raw)
 
     # ── Try dash pattern first ────────────────────────────────────────────────
     dash_match = DASH_PATTERN.search(sig)

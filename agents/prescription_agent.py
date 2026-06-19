@@ -29,10 +29,11 @@ Your job is to extract structured information from each zone.
 EXTRACTION RULES:
 1. Drug names: extract as-is (brand names like "Augmentin", "Crocin", "Pan D" — do NOT convert)
 2. Sigs: extract VERBATIM — "1-0-1 pc", "BD x 5 days", "TDS after food", "½ tab OD hs"
-3. Patient: name, age, gender, weight, date
-4. Prescriber: doctor name, qualification (MBBS/MD etc), reg no, clinic name
-5. If a field is unclear or ambiguous, set confidence to "low"
-6. If text contains non-English (Bengali/Hindi), try to extract meaning if possible, else note it
+3. Duration: extract from the DURATION column (if separate from dosage). Examples: "8 Days", "5 Days", "continue", "till review". If duration is embedded in the sig (e.g., "BD x 5 days"), leave duration_raw empty and it will be parsed from sig_raw.
+4. Patient: name, age, gender, weight, date
+5. Prescriber: doctor name, qualification (MBBS/MD etc), reg no, clinic name
+6. If a field is unclear or ambiguous, set confidence to "low"
+7. If text contains non-English (Bengali/Hindi), try to extract meaning if possible, else note it
 
 Respond ONLY with valid JSON in this exact format:
 {
@@ -51,6 +52,7 @@ Respond ONLY with valid JSON in this exact format:
       "form": "tab|cap|syr|...",
       "strength": "...",
       "sig_raw": "...",
+      "duration_raw": "...",
       "route": "...",
       "confidence": "high|medium|low",
       "notes": "..."
@@ -109,7 +111,12 @@ def run_prescription_agent(
         context_parts.append(f"PATIENT HEADER:\n{layout.patient_header_text}")
     if layout.drug_list_text:
         context_parts.append(f"DRUG LIST:\n{layout.drug_list_text}")
-    if layout.dosage_column_text:
+    if layout.dosage_column_text and layout.duration_column_text:
+        context_parts.append(
+            f"DOSAGE/SIG (one per drug, in order):\n{layout.dosage_column_text}\n\n"
+            f"DURATION (one per drug, SAME ORDER as dosage above):\n{layout.duration_column_text}"
+        )
+    elif layout.dosage_column_text:
         context_parts.append(f"DOSAGE/SIG:\n{layout.dosage_column_text}")
     if layout.prescriber_footer_text:
         context_parts.append(f"PRESCRIBER:\n{layout.prescriber_footer_text}")
@@ -186,7 +193,8 @@ def run_prescription_agent(
         brand, generic, kb_verified = resolve_brand(drug_name_raw)
 
         # SYMBOLIC: sig parsing → structured timing
-        timing = parse_sig(sig_raw) if sig_raw else TimingStructure()
+        duration_raw = m.get("duration_raw", "")
+        timing = parse_sig(sig_raw, duration_raw) if (sig_raw or duration_raw) else TimingStructure()
 
         # SYMBOLIC: normalize form and route
         form = normalize_form(m.get("form", ""))

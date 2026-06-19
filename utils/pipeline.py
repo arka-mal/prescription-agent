@@ -67,6 +67,7 @@ def run_pipeline(
             raw_ocr_text=result.ocr.raw_text,
             groq_api_key=groq_api_key,
             model=groq_model,
+            ocr_blocks=result.ocr.blocks,
         )
     except Exception as e:
         result.error_stage = "Layout Agent"

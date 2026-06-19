@@ -2,6 +2,12 @@ from pydantic import BaseModel, Field
 from typing import Optional, List, Dict, Any
 from enum import Enum
 
+class OCRBlock(BaseModel):
+    text: str
+    bbox: List[float]            # [x0, y0, x1, y1] normalized 0-1
+    confidence: float = 0.0
+    is_handwritten_guess: bool = False
+
 
 class ConfidenceLevel(str, Enum):
     HIGH = "high"
@@ -70,6 +76,7 @@ class OCRResult(BaseModel):
     mixed_script_flags: List[str] = Field(default_factory=list)
     overall_confidence: ConfidenceLevel = ConfidenceLevel.MEDIUM
     word_count: int = 0
+    blocks: List[OCRBlock] = Field(default_factory=list)
 
 
 class LayoutResult(BaseModel):

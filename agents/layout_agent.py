@@ -11,6 +11,7 @@ import json
 import re
 from groq import Groq
 from models.rx_schema import LayoutResult, LayoutSegment, ConfidenceLevel
+from typing import Optional
 
 
 LAYOUT_SYSTEM_PROMPT = """You are a medical prescription layout analysis agent specializing in Indian prescriptions.
@@ -58,7 +59,9 @@ Respond ONLY with a valid JSON object in this exact format:
 def run_layout_agent(
     raw_ocr_text: str,
     groq_api_key: str,
-    model: str = "llama-3.3-70b-versatile"
+    model: str = "llama-3.3-70b-versatile",
+    ocr_blocks: Optional[list] = None,
+    
 ) -> LayoutResult:
     """
     Layout agent: takes raw OCR text, returns segmented LayoutResult.
@@ -126,6 +129,27 @@ Return the structured JSON segmentation."""
                 confidence=_conf(seg.get("confidence", "medium")),
             )
         )
+    # Symbolic matching: map each segment to OCR blocks for bbox extraction
+    def _match_segment_to_blocks(segment_text: str, ocr_blocks: list) -> Optional[dict]:
+        """Find OCR blocks whose text appears in segment_text, union their bboxes."""
+        if not segment_text or not ocr_blocks:
+            return None
+        matched = [
+            b for b in ocr_blocks
+            if b.text and b.text.strip() and b.text.strip() in segment_text
+        ]
+        if not matched:
+            return None
+        x0 = min(b.bbox[0] for b in matched)
+        y0 = min(b.bbox[1] for b in matched)
+        x1 = max(b.bbox[2] for b in matched)
+        y1 = max(b.bbox[3] for b in matched)
+        return {"x0": x0, "y0": y0, "x1": x1, "y1": y1}
+
+    # Apply bbox matching to each segment
+    if ocr_blocks:
+        for seg in segments:
+            seg.bounding_box = _match_segment_to_blocks(seg.raw_text, ocr_blocks)
 
     return LayoutResult(
         segments=segments,

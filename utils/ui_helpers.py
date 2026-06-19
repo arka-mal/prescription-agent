@@ -6,6 +6,8 @@ Kept separate from app.py to keep the main file clean.
 """
 
 import streamlit as st
+import io
+from PIL import Image, ImageDraw
 from models.rx_schema import (
     OCRResult, LayoutResult, PrescriptionResult, ConfidenceLevel
 )
@@ -95,10 +97,52 @@ def render_ocr_panel(ocr: OCRResult):
 
 # ── Layout Panel ─────────────────────────────────────────────────────────────
 
-def render_layout_panel(layout: LayoutResult):
+def render_layout_panel(layout: LayoutResult, image_bytes: bytes = None):
     st.markdown("### 🗂️ Layout Agent Output")
 
     st.metric("Overall Confidence", conf_badge(layout.overall_confidence))
+
+    # Draw bounding boxes on image if available
+    if image_bytes:
+        try:
+            img = Image.open(io.BytesIO(image_bytes)).convert("RGB")
+            draw = ImageDraw.Draw(img, "RGBA")
+            w, h = img.size
+
+            box_colors = {
+                "patient_header": (59, 130, 246, 100),      # blue
+                "drug_list": (34, 197, 94, 100),            # green
+                "dosage_column": (234, 179, 8, 100),        # yellow
+                "duration_column": (236, 72, 153, 100),     # pink
+                "prescriber_footer": (139, 92, 246, 100),   # purple
+                "clinical_notes": (249, 115, 22, 100),      # orange
+                "annotation": (100, 116, 139, 100),         # slate
+                "unknown": (148, 163, 184, 100),            # light slate
+            }
+
+            for seg in layout.segments:
+                if not seg.bounding_box:
+                    continue
+                bb = seg.bounding_box
+                x0 = bb.get("x0", 0) * w
+                y0 = bb.get("y0", 0) * h
+                x1 = bb.get("x1", 1) * w
+                y1 = bb.get("y1", 1) * h
+
+                color = box_colors.get(seg.label, (148, 163, 184, 100))
+                draw.rectangle([x0, y0, x1, y1], outline=color, width=3, fill=color)
+
+                label_text = SEGMENT_LABELS.get(seg.label, seg.label)
+                try:
+                    draw.text((x0 + 4, max(y0 - 18, 0)), label_text, fill=(0, 0, 0, 255))
+                except Exception:
+                    pass
+
+            st.image(img, caption="Segment Annotation Overlay", use_container_width=True)
+        except Exception as e:
+            st.warning(f"Could not render bounding box overlay: {e}")
+
+    st.markdown("**Semantic Segments**")
 
     st.markdown("**Semantic Segments**")
     for seg in layout.segments:

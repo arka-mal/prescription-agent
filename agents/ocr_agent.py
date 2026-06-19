@@ -12,7 +12,7 @@ import os
 from typing import Optional
 from google.cloud import vision
 from google.oauth2 import service_account
-from models.rx_schema import OCRResult, ConfidenceLevel
+from models.rx_schema import OCRResult, ConfidenceLevel, OCRBlock
 
 
 def _get_vision_client(credentials_path: Optional[str] = None, credentials_info: Optional[dict] = None):
@@ -102,9 +102,11 @@ def run_ocr_agent(
     # Google Vision marks handwritten text with block_type == UNKNOWN or via confidence
     handwritten_regions = []
     printed_regions = []
+    blocks = []
 
     try:
         for page in response.full_text_annotation.pages:
+            page_w, page_h = page.width, page.height
             for block in page.blocks:
                 block_text = ""
                 for para in block.paragraphs:
@@ -113,10 +115,31 @@ def run_ocr_agent(
                         block_text += word_text + " "
                 block_text = block_text.strip()
 
+                if not block_text:
+                    continue
+
+                # Extract bounding box and normalize to 0-1
+                verts = block.bounding_box.vertices
+                xs = [v.x for v in verts]
+                ys = [v.y for v in verts]
+                bbox_norm = [
+                    min(xs) / page_w if page_w else 0,
+                    min(ys) / page_h if page_h else 0,
+                    max(xs) / page_w if page_w else 1,
+                    max(ys) / page_h if page_h else 1,
+                ]
+
+                blocks.append(OCRBlock(
+                    text=block_text,
+                    bbox=bbox_norm,
+                    confidence=block.confidence,
+                    is_handwritten_guess=block.confidence < 0.75,
+                ))
+
                 # Heuristic: low-confidence blocks → likely handwritten
-                if block.confidence < 0.75 and block_text:
+                if block.confidence < 0.75:
                     handwritten_regions.append(block_text[:80])
-                elif block_text:
+                else:
                     printed_regions.append(block_text[:80])
     except Exception:
         pass
@@ -136,4 +159,5 @@ def run_ocr_agent(
         mixed_script_flags=mixed_flags,
         overall_confidence=confidence,
         word_count=word_count,
+        blocks=blocks,
     )

@@ -219,6 +219,7 @@ if uploaded_file:
             ocr_result = None
             layout_result = None
             rx_result = None
+            ocr_blocks_to_pass = None
             pipeline_error = None
 
             # Stage 1: OCR
@@ -228,6 +229,7 @@ if uploaded_file:
                     credentials_path=gcp_credentials_path,
                     credentials_info=gcp_credentials_info,
                 )
+                ocr_blocks_to_pass = ocr_result.blocks  # CAPTURE BLOCKS HERE
                 ocr_status.markdown('<div class="pipeline-step done">🔍 OCR / HTR Agent ✅</div>', unsafe_allow_html=True)
             except Exception as e:
                 ocr_status.markdown('<div class="pipeline-step error">🔍 OCR / HTR Agent ❌</div>', unsafe_allow_html=True)
@@ -241,6 +243,7 @@ if uploaded_file:
                     raw_ocr_text=ocr_result.raw_text,
                     groq_api_key=groq_key,
                     model=groq_model,
+                    ocr_blocks=ocr_blocks_to_pass,
                 )
                 layout_status.markdown('<div class="pipeline-step done">🗂️ Layout Agent ✅</div>', unsafe_allow_html=True)
             except Exception as e:

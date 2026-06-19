@@ -9,6 +9,7 @@ Output: LayoutResult with labeled fields + bounding box hints
 
 import json
 import re
+import streamlit as st
 from groq import Groq
 from models.rx_schema import LayoutResult, LayoutSegment, ConfidenceLevel
 from typing import Optional
@@ -148,6 +149,10 @@ Return the structured JSON segmentation."""
         x1 = max(b.bbox[2] for b in matched)
         y1 = max(b.bbox[3] for b in matched)
         return {"x0": x0, "y0": y0, "x1": x1, "y1": y1}
+
+    st.write(f"DEBUG: Layout received {len(ocr_blocks or [])} blocks, processed {len(segments)} segments")
+    for seg in segments:
+        st.write(f"  - {seg.label}: bbox={'YES' if seg.bounding_box else 'NO'}")
 
     # Apply bbox matching to each segment
     if ocr_blocks:

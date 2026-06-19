@@ -9,6 +9,7 @@ Neural component: Google Cloud Vision API
 
 import base64
 import os
+import streamlit as st
 from typing import Optional
 from google.cloud import vision
 from google.oauth2 import service_account
@@ -151,6 +152,7 @@ def run_ocr_agent(
             f"Mixed scripts detected: {', '.join(scripts)} — dosage instructions may be in regional language"
         )
 
+    st.write(f"DEBUG: OCR extracted {len(blocks)} blocks")
     return OCRResult(
         raw_text=full_text,
         detected_scripts=scripts,

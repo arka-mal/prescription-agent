@@ -100,6 +100,8 @@ def render_ocr_panel(ocr: OCRResult):
 def render_layout_panel(layout: LayoutResult, image_bytes: bytes = None):
     st.markdown("### 🗂️ Layout Agent Output")
 
+    st.write(f"DEBUG: image_bytes={'present' if image_bytes else 'MISSING'}, segments={len(layout.segments)}")
+
     st.metric("Overall Confidence", conf_badge(layout.overall_confidence))
 
     # Draw bounding boxes on image if available

@@ -79,6 +79,9 @@ def run_layout_agent(
     Returns:
         LayoutResult with labeled segments
     """
+
+    # Store blocks immediately to avoid Streamlit/serialization issues
+    blocks_to_use = list(ocr_blocks) if ocr_blocks else []
     client = Groq(api_key=groq_api_key)
 
     user_message = f"""Analyze this prescription OCR text and segment it into zones:
@@ -136,15 +139,22 @@ Return the structured JSON segmentation."""
         )
     # Symbolic matching: map each segment to OCR blocks for bbox extraction
     def _match_segment_to_blocks(segment_text: str, ocr_blocks: list) -> Optional[dict]:
-        """Find OCR blocks whose text appears in segment_text, union their bboxes."""
+        """Find OCR blocks whose text appears in segment_text, union their bboxes.
+        Uses fuzzy matching: a block matches if any of its words appear in the segment."""
         if not segment_text or not ocr_blocks:
             return None
     
-        # Match if OCR block text appears IN the segment (not vice versa)
-        matched = [
-            b for b in ocr_blocks
-            if b.text and len(b.text.strip()) > 1 and b.text.strip().lower() in segment_text.lower()
-        ]
+        segment_lower = segment_text.lower()
+        matched = []
+    
+        for b in ocr_blocks:
+            if not b.text or len(b.text.strip()) < 1:
+                continue
+            block_text = b.text.strip().lower()
+            # Match if block text is in segment OR if any word from block is in segment
+            if block_text in segment_lower or any(word in segment_lower for word in block_text.split()):
+                matched.append(b)
+    
         if not matched:
             return None
     
@@ -154,14 +164,14 @@ Return the structured JSON segmentation."""
         y1 = max(b.bbox[3] for b in matched)
         return {"x0": x0, "y0": y0, "x1": x1, "y1": y1}
 
-    st.write(f"DEBUG: Layout received {len(ocr_blocks or [])} blocks, processed {len(segments)} segments")
+    st.write(f"DEBUG: Layout received {len(blocks_to_use or [])} blocks, processed {len(segments)} segments")
     for seg in segments:
         st.write(f"  - {seg.label}: bbox={'YES' if seg.bounding_box else 'NO'}")
 
     # Apply bbox matching to each segment
-    if ocr_blocks:
+    if blocks_to_use:
         for seg in segments:
-            seg.bounding_box = _match_segment_to_blocks(seg.raw_text, ocr_blocks)
+            seg.bounding_box = _match_segment_to_blocks(seg.raw_text, blocks_to_use)
 
     return LayoutResult(
         segments=segments,

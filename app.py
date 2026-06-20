@@ -235,7 +235,7 @@ if uploaded_file:
         st.divider()
 
         # ── Display results in tabs ───────────────────────────────────────────
-        tab1, tab2, tab3 = st.tabs([
+        tab1, tab2 = st.tabs([
             "🔍 OCR / HTR Agent",
             "🗂️ Layout Agent",
         ])

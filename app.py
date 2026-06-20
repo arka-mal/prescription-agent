@@ -161,7 +161,7 @@ if uploaded_file:
         st.markdown(f"- **Size:** {uploaded_file.size / 1024:.1f} KB")
         st.markdown(f"- **Type:** {uploaded_file.type}")
         st.markdown("")
-        st.info("Configure your API keys in the sidebar, then click **Run Pipeline**.")
+        st.info("Click **Run Pipeline** after uploading the image.")
 
     st.divider()
 

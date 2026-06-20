@@ -1,11 +1,10 @@
 """
 Prescription Processing Pipeline
-Agentic AI + Neuro-Symbolic AI — Assignment Demo
+Agentic AI Assignment Demo
 -------------------------------------------------
 Stack:
   OCR/HTR  : Google Cloud Vision (neural perception)
   Layout   : Groq LLM — llama-3.3-70b (neural segmentation)
-  Rx Agent : Groq LLM + symbolic sig parser + drug KB (neuro-symbolic)
 """
 
 import os
@@ -15,8 +14,9 @@ import streamlit as st
 from PIL import Image
 import io
 
-from utils.pipeline import run_pipeline
-from utils.ui_helpers import render_ocr_panel, render_layout_panel, render_prescription_panel
+from agents.ocr_agent import run_ocr_agent
+from agents.layout_agent import run_layout_agent
+from utils.ui_helpers import render_ocr_panel, render_layout_panel
 from config import (
     USE_BACKEND_GROQ_KEY, USE_BACKEND_GCP_CREDS,
     GROQ_API_KEY, GCP_SERVICE_ACCOUNT_INFO, GROQ_MODEL_DEFAULT,
@@ -112,20 +112,16 @@ with st.sidebar:
          ↓
     [OCR/HTR Agent]
     Google Vision API
-    Neural perception
+    Handwriting recognition
+    Script detection
          ↓
     [Layout Agent]
     Groq LLM
     Field segmentation
+    Bounding box mapping
          ↓
-    [Prescription Agent]
-    Groq LLM  ← Neural
-    + Sig Parser ← Symbolic
-    + Drug KB    ← Symbolic
-    + Validator  ← Symbolic
-         ↓
-    Structured Output
-    FHIR-lite JSON
+    Annotated Segments
+    + Bounding Boxes
     ```
     """)
 
@@ -182,16 +178,13 @@ if uploaded_file:
     st.divider()
 
     # Pipeline status display
-    status_cols = st.columns(3)
+    status_cols = st.columns(2)
     with status_cols[0]:
         ocr_status = st.empty()
         ocr_status.markdown('<div class="pipeline-step">🔍 OCR / HTR Agent</div>', unsafe_allow_html=True)
     with status_cols[1]:
         layout_status = st.empty()
         layout_status.markdown('<div class="pipeline-step">🗂️ Layout Agent</div>', unsafe_allow_html=True)
-    with status_cols[2]:
-        rx_status = st.empty()
-        rx_status.markdown('<div class="pipeline-step">💊 Prescription Agent</div>', unsafe_allow_html=True)
 
     st.markdown("")
     run_btn = st.button("🚀 Run Pipeline", type="primary", use_container_width=True)
@@ -214,13 +207,10 @@ if uploaded_file:
 
             from agents.ocr_agent import run_ocr_agent
             from agents.layout_agent import run_layout_agent
-            from agents.prescription_agent import run_prescription_agent
 
             ocr_result = None
             layout_result = None
-            rx_result = None
             ocr_blocks_to_pass = None
-            pipeline_error = None
 
             # Stage 1: OCR
             try:
@@ -251,19 +241,7 @@ if uploaded_file:
                 st.error(f"Layout Agent failed: {e}")
                 st.stop()
 
-            # Stage 3: Prescription
-            rx_status.markdown('<div class="pipeline-step active">💊 Prescription Agent ⏳</div>', unsafe_allow_html=True)
-            try:
-                rx_result = run_prescription_agent(
-                    layout=layout_result,
-                    groq_api_key=groq_key,
-                    model=groq_model,
-                )
-                rx_status.markdown('<div class="pipeline-step done">💊 Prescription Agent ✅</div>', unsafe_allow_html=True)
-            except Exception as e:
-                rx_status.markdown('<div class="pipeline-step error">💊 Prescription Agent ❌</div>', unsafe_allow_html=True)
-                st.error(f"Prescription Agent failed: {e}")
-                st.stop()
+
 
         st.success("✅ Pipeline complete!")
         st.divider()
@@ -272,7 +250,6 @@ if uploaded_file:
         tab1, tab2, tab3 = st.tabs([
             "🔍 OCR / HTR Agent",
             "🗂️ Layout Agent",
-            "💊 Prescription Agent",
         ])
 
         with tab1:
@@ -283,9 +260,7 @@ if uploaded_file:
             if layout_result:
                 render_layout_panel(layout_result, image_bytes=image_bytes)
 
-        with tab3:
-            if rx_result:
-                render_prescription_panel(rx_result)
+
 
 else:
     # Landing state

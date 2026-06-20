@@ -67,18 +67,19 @@ st.markdown("""
 st.markdown("""
 <div class="main-header">
     <h1>💊 Prescription Processing Pipeline</h1>
-    <p>Neuro-Symbolic AI · OCR/HTR Agent · Layout Agent · Prescription Agent</p>
+    <p>OCR/HTR Agent · Layout Agent</p>
 </div>
 """, unsafe_allow_html=True)
 
 # ── Sidebar: API Keys & Config ────────────────────────────────────────────────
 
 with st.sidebar:
-    st.markdown("### ⚙️ Configuration")
+    
 
     if USE_BACKEND_GROQ_KEY:
         groq_key = GROQ_API_KEY
     else:
+        st.markdown("### ⚙️ Configuration")
         groq_key = st.text_input(
             "Groq API Key",
             type="password",
@@ -126,19 +127,6 @@ with st.sidebar:
     """)
 
     st.divider()
-    st.markdown("### ℹ️ Neuro-Symbolic Design")
-    st.markdown("""
-    **Neural** components handle fuzzy perception:
-    - Handwriting recognition
-    - Field classification
-    - Drug name extraction
-
-    **Symbolic** components enforce structure:
-    - Sig parser rule engine
-    - Brand → generic KB
-    - FHIR schema validator
-    - HITL confidence gate
-    """)
 
 # ── Main Area ─────────────────────────────────────────────────────────────────
 
@@ -284,7 +272,7 @@ else:
     st.markdown("")
     st.markdown("### 🧠 How it works")
 
-    exp1, exp2, exp3 = st.columns(3)
+    exp1, exp2 = st.columns(2)
     with exp1:
         st.markdown("""
         **🔍 OCR / HTR Agent**
@@ -301,13 +289,4 @@ else:
         A Groq LLM segments the raw text into semantic zones:
         patient header, drug list, dosage column, prescriber footer,
         and annotations. This is the neural field-detection step.
-        """)
-    with exp3:
-        st.markdown("""
-        **💊 Prescription Agent**
-
-        Combines neural extraction (Groq LLM) with symbolic reasoning:
-        a rule-based sig parser normalizes dosage instructions,
-        a drug KB resolves brand → generic names, and a validator
-        gates confidence and flags fields for human review.
         """)

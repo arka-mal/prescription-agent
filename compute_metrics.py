@@ -31,7 +31,7 @@ except ImportError:
 # ── Paths ─────────────────────────────────────────────────────────────────────
 ROOT_DIR   = Path(__file__).parent
 OUTPUT_DIR = ROOT_DIR / "batch-output"
-CSV_PATH   = OUTPUT_DIR / "results.csv"
+CSV_PATH   = OUTPUT_DIR / "results-final.csv"
 SUMMARY    = OUTPUT_DIR / "metrics_summary.txt"
 
 if not CSV_PATH.exists():

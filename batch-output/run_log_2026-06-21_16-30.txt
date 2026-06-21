@@ -1,0 +1,56 @@
+[001] 74.jpg: SUCCESS |  OCR:19blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[002] 75.jpg: SUCCESS |  OCR:8blk/MEDIUM | Layout:6seg/HIGH | BBox:1/6 | Scripts:latin 
+[003] 76.jpg: SUCCESS |  OCR:3blk/MEDIUM | Layout:3seg/MEDIUM | BBox:1/3 | Scripts:latin|devanagari MIXED
+[004] 77.jpg: SUCCESS |  OCR:14blk/MEDIUM | Layout:6seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[005] 78.jpg: SUCCESS |  OCR:31blk/MEDIUM | Layout:3seg/MEDIUM | BBox:2/3 | Scripts:latin 
+[006] 79.jpg: SUCCESS |  OCR:17blk/MEDIUM | Layout:3seg/LOW | BBox:2/2 | Scripts:latin 
+[007] 80.jpg: SUCCESS |  OCR:21blk/MEDIUM | Layout:4seg/MEDIUM | BBox:2/3 | Scripts:latin 
+[008] 81.jpg: SUCCESS |  OCR:25blk/MEDIUM | Layout:1seg/LOW | BBox:0/0 | Scripts:latin 
+[009] 82.jpg: SUCCESS |  OCR:25blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[010] 83.jpg: SUCCESS |  OCR:17blk/HIGH | Layout:8seg/HIGH | BBox:3/7 | Scripts:latin 
+[011] 84.jpg: SUCCESS |  OCR:47blk/MEDIUM | Layout:9seg/HIGH | BBox:3/5 | Scripts:latin|bengali MIXED
+[012] 85.jpg: SUCCESS |  OCR:33blk/HIGH | Layout:6seg/MEDIUM | BBox:4/4 | Scripts:latin 
+[013] 86.jpg: SUCCESS |  OCR:6blk/LOW | Layout:1seg/LOW | BBox:1/1 | Scripts:latin 
+[014] 87.jpg: SUCCESS |  OCR:27blk/MEDIUM | Layout:4seg/MEDIUM | BBox:3/3 | Scripts:latin 
+[015] 88.jpg: SUCCESS |  OCR:36blk/MEDIUM | Layout:0seg/LOW | BBox:0/0 | Scripts:latin 
+[016] 89.jpg: SUCCESS |  OCR:22blk/MEDIUM | Layout:5seg/MEDIUM | BBox:5/5 | Scripts:latin 
+[017] 90.jpg: SUCCESS |  OCR:15blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin|bengali MIXED
+[018] 91.jpg: SUCCESS |  OCR:36blk/MEDIUM | Layout:3seg/MEDIUM | BBox:3/3 | Scripts:latin|devanagari MIXED
+[019] 92.jpg: SUCCESS |  OCR:18blk/MEDIUM | Layout:7seg/MEDIUM | BBox:5/6 | Scripts:latin 
+[020] 93.jpg: SUCCESS |  OCR:9blk/MEDIUM | Layout:3seg/LOW | BBox:3/3 | Scripts:latin 
+[021] 94.jpg: SUCCESS |  OCR:15blk/HIGH | Layout:7seg/MEDIUM | BBox:5/6 | Scripts:latin 
+[022] 95.jpg: SUCCESS |  OCR:31blk/HIGH | Layout:5seg/MEDIUM | BBox:3/4 | Scripts:latin 
+[023] 96.jpg: SUCCESS |  OCR:17blk/HIGH | Layout:5seg/HIGH | BBox:3/5 | Scripts:latin 
+[024] 97.jpg: SUCCESS |  OCR:19blk/HIGH | Layout:6seg/HIGH | BBox:3/6 | Scripts:latin 
+[025] 98.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:7seg/HIGH | BBox:4/7 | Scripts:latin 
+[026] 99.jpg: SUCCESS |  OCR:34blk/MEDIUM | Layout:7seg/MEDIUM | BBox:5/7 | Scripts:latin 
+[027] 100.jpg: SUCCESS |  OCR:19blk/MEDIUM | Layout:14seg/MEDIUM | BBox:4/5 | Scripts:latin 
+[028] 101.jpg: SUCCESS |  OCR:20blk/HIGH | Layout:6seg/LOW | BBox:4/6 | Scripts:latin 
+[029] 102.jpg: SUCCESS |  OCR:11blk/MEDIUM | Layout:2seg/MEDIUM | BBox:1/1 | Scripts:latin|devanagari MIXED
+[030] 103.jpg: SUCCESS |  OCR:16blk/MEDIUM | Layout:7seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[031] 104.jpg: SUCCESS |  OCR:9blk/MEDIUM | Layout:3seg/LOW | BBox:2/3 | Scripts:latin 
+[032] 105.jpg: SUCCESS |  OCR:26blk/MEDIUM | Layout:6seg/HIGH | BBox:5/5 | Scripts:latin 
+[033] 106.jpg: SUCCESS |  OCR:17blk/LOW | Layout:5seg/LOW | BBox:2/4 | Scripts:latin 
+[034] 107.jpg: SUCCESS |  OCR:11blk/MEDIUM | Layout:5seg/MEDIUM | BBox:3/5 | Scripts:latin 
+[035] 108.jpg: SUCCESS |  OCR:52blk/HIGH | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[036] 109.jpg: SUCCESS |  OCR:27blk/HIGH | Layout:5seg/MEDIUM | BBox:5/5 | Scripts:latin 
+[037] 110.jpg: SUCCESS |  OCR:7blk/MEDIUM | Layout:4seg/LOW | BBox:2/3 | Scripts:latin 
+[038] 111.jpg: SUCCESS |  OCR:39blk/MEDIUM | Layout:6seg/MEDIUM | BBox:3/4 | Scripts:latin|devanagari|bengali MIXED
+[039] 112.jpg: SUCCESS |  OCR:8blk/HIGH | Layout:5seg/MEDIUM | BBox:1/5 | Scripts:latin 
+[040] 113.jpg: SUCCESS |  OCR:9blk/MEDIUM | Layout:4seg/MEDIUM | BBox:2/4 | Scripts:latin 
+[041] 114.jpg: SUCCESS |  OCR:17blk/HIGH | Layout:7seg/MEDIUM | BBox:2/7 | Scripts:latin 
+[042] 115.jpg: SUCCESS |  OCR:26blk/MEDIUM | Layout:7seg/MEDIUM | BBox:5/7 | Scripts:latin 
+[043] 116.jpg: SUCCESS |  OCR:31blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[044] 117.jpg: SUCCESS |  OCR:19blk/MEDIUM | Layout:5seg/MEDIUM | BBox:3/5 | Scripts:latin 
+[045] 118.jpg: SUCCESS |  OCR:21blk/MEDIUM | Layout:2seg/LOW | BBox:2/2 | Scripts:latin 
+[046] 119.jpg: SUCCESS |  OCR:50blk/MEDIUM | Layout:6seg/MEDIUM | BBox:3/4 | Scripts:latin|devanagari MIXED
+[047] 120.jpg: SUCCESS |  OCR:14blk/HIGH | Layout:5seg/LOW | BBox:2/5 | Scripts:latin 
+[048] 121.jpg: SUCCESS |  OCR:6blk/LOW | Layout:4seg/MEDIUM | BBox:4/4 | Scripts:latin 
+[049] 122.jpg: SUCCESS |  OCR:6blk/MEDIUM | Layout:7seg/MEDIUM | BBox:1/3 | Scripts:latin 
+[050] 123.jpg: SUCCESS |  OCR:5blk/MEDIUM | Layout:6seg/MEDIUM | BBox:2/5 | Scripts:latin 
+[051] 124.jpg: SUCCESS |  OCR:51blk/HIGH | Layout:7seg/MEDIUM | BBox:5/7 | Scripts:latin|bengali MIXED
+[052] 125.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:7seg/LOW | BBox:3/4 | Scripts:latin 
+[053] 126.jpg: SUCCESS |  OCR:14blk/HIGH | Layout:4seg/MEDIUM | BBox:4/4 | Scripts:latin 
+[054] 127.jpg: SUCCESS |  OCR:10blk/MEDIUM | Layout:6seg/LOW | BBox:2/5 | Scripts:latin 
+[055] 128.jpg: SUCCESS |  OCR:60blk/MEDIUM | Layout:6seg/MEDIUM | BBox:3/4 | Scripts:latin|devanagari MIXED
+[056] 129.jpg: SUCCESS |  OCR:13blk/MEDIUM | Layout:7seg/MEDIUM | BBox:3/7 | Scripts:latin 

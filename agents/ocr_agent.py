@@ -152,7 +152,7 @@ def run_ocr_agent(
             f"Mixed scripts detected: {', '.join(scripts)} — dosage instructions may be in regional language"
         )
 
-    st.write(f"DEBUG: OCR extracted {len(blocks)} blocks")
+    #st.write(f"DEBUG: OCR extracted {len(blocks)} blocks")
     
     return OCRResult(
         raw_text=full_text,

@@ -22,6 +22,7 @@ import json
 import traceback
 from pathlib import Path
 from dotenv import load_dotenv
+from datetime import datetime
 
 # ── Load environment variables from .env ──────────────────────────────────────
 load_dotenv()
@@ -45,8 +46,9 @@ with open(GCP_CREDENTIALS_PATH, "r") as f:
 ROOT_DIR    = Path(__file__).parent
 DATASET_DIR = ROOT_DIR / "dataset"
 OUTPUT_DIR  = ROOT_DIR / "batch-output"
-OUTPUT_CSV  = OUTPUT_DIR / "results.csv"
-LOG_FILE    = OUTPUT_DIR / "run_log.txt"
+TIMESTAMP   = datetime.now().strftime("%Y-%m-%d_%H-%M")
+OUTPUT_CSV  = OUTPUT_DIR / f"results_{TIMESTAMP}.csv"
+LOG_FILE    = OUTPUT_DIR / f"run_log_{TIMESTAMP}.txt"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
 
@@ -115,7 +117,7 @@ def get_image_files():
     """Get all image files from dataset folder, sorted numerically."""
     extensions = {".jpg", ".jpeg", ".png", ".webp", ".tiff", ".bmp"}
     files = []
-    for i in range(1, TOTAL_IMAGES + 1):
+    for i in range(74, TOTAL_IMAGES + 1):
         for ext in extensions:
             candidate = DATASET_DIR / f"{i}{ext}"
             if candidate.exists():

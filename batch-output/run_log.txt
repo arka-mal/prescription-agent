@@ -1,0 +1,939 @@
+[001] 1.jpg: SUCCESS |  OCR:10blk/MEDIUM | Layout:6seg/MEDIUM | BBox:2/5 | Scripts:latin 
+[002] 2.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:8seg/MEDIUM | BBox:5/7 | Scripts:latin 
+[003] 3.jpg: SUCCESS |  OCR:14blk/MEDIUM | Layout:4seg/MEDIUM | BBox:2/3 | Scripts:latin 
+[004] 4.jpg: SUCCESS |  OCR:61blk/MEDIUM | Layout:6seg/MEDIUM | BBox:3/4 | Scripts:latin|devanagari MIXED
+[005] 5.jpg: SUCCESS |  OCR:15blk/MEDIUM | Layout:6seg/LOW | BBox:3/6 | Scripts:latin 
+[006] 6.jpg: SUCCESS |  OCR:24blk/MEDIUM | Layout:7seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[007] 7.jpg: SUCCESS |  OCR:22blk/MEDIUM | Layout:7seg/MEDIUM | BBox:7/7 | Scripts:latin 
+[008] 8.jpg: SUCCESS |  OCR:29blk/MEDIUM | Layout:6seg/MEDIUM | BBox:5/6 | Scripts:latin 
+[009] 9.jpg: SUCCESS |  OCR:19blk/HIGH | Layout:7seg/HIGH | BBox:2/7 | Scripts:latin 
+[010] 10.jpg: SUCCESS |  OCR:24blk/HIGH | Layout:5seg/MEDIUM | BBox:4/4 | Scripts:latin 
+[011] 11.jpg: SUCCESS |  OCR:22blk/MEDIUM | Layout:7seg/MEDIUM | BBox:7/7 | Scripts:latin|devanagari MIXED
+[012] 12.jpg: SUCCESS |  OCR:8blk/MEDIUM | Layout:4seg/LOW | BBox:1/3 | Scripts:latin 
+[013] 13.jpg: SUCCESS |  OCR:14blk/HIGH | Layout:2seg/LOW | BBox:2/2 | Scripts:latin 
+[014] 14.jpg: SUCCESS |  OCR:21blk/MEDIUM | Layout:8seg/HIGH | BBox:5/7 | Scripts:latin 
+[015] 15.jpg: SUCCESS |  OCR:12blk/HIGH | Layout:7seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[016] 16.jpg: SUCCESS |  OCR:21blk/HIGH | Layout:5seg/MEDIUM | BBox:3/5 | Scripts:latin 
+[017] 17.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:7seg/MEDIUM | BBox:7/7 | Scripts:latin 
+[018] 18.jpg: SUCCESS |  OCR:11blk/HIGH | Layout:6seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[019] 19.jpg: SUCCESS |  OCR:11blk/MEDIUM | Layout:3seg/LOW | BBox:2/3 | Scripts:latin 
+[020] 20.jpg: SUCCESS |  OCR:16blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/5 | Scripts:latin 
+[021] 21.jpg: SUCCESS |  OCR:5blk/MEDIUM | Layout:2seg/MEDIUM | BBox:2/2 | Scripts:latin 
+[022] 22.jpg: SUCCESS |  OCR:19blk/MEDIUM | Layout:3seg/LOW | BBox:3/3 | Scripts:latin 
+[023] 23.jpg: SUCCESS |  OCR:13blk/MEDIUM | Layout:5seg/MEDIUM | BBox:5/5 | Scripts:latin 
+[024] 24.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:5seg/MEDIUM | BBox:4/5 | Scripts:latin 
+[025] 25.jpg: SUCCESS |  OCR:15blk/MEDIUM | Layout:5seg/MEDIUM | BBox:4/5 | Scripts:latin 
+[026] 26.jpg: SUCCESS |  OCR:24blk/MEDIUM | Layout:7seg/MEDIUM | BBox:6/7 | Scripts:latin 
+[027] 27.jpg: SUCCESS |  OCR:39blk/MEDIUM | Layout:4seg/LOW | BBox:3/3 | Scripts:latin 
+[028] 28.jpg: SUCCESS |  OCR:8blk/MEDIUM | Layout:4seg/HIGH | BBox:3/4 | Scripts:latin 
+[029] 29.jpg: SUCCESS |  OCR:31blk/HIGH | Layout:7seg/MEDIUM | BBox:4/5 | Scripts:latin 
+[030] 30.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:7seg/MEDIUM | BBox:7/7 | Scripts:latin 
+[031] 31.jpg: SUCCESS |  OCR:13blk/HIGH | Layout:7seg/HIGH | BBox:3/5 | Scripts:latin 
+[032] 32.jpg: SUCCESS |  OCR:24blk/HIGH | Layout:8seg/LOW | BBox:2/3 | Scripts:latin 
+[033] 33.jpg: SUCCESS |  OCR:24blk/MEDIUM | Layout:8seg/MEDIUM | BBox:7/7 | Scripts:latin 
+[034] 34.jpg: SUCCESS |  OCR:5blk/LOW | Layout:1seg/LOW | BBox:1/1 | Scripts:latin 
+[035] 35.jpg: SUCCESS |  OCR:15blk/MEDIUM | Layout:0seg/LOW | BBox:0/0 | Scripts:latin 
+[036] 36.jpg: SUCCESS |  OCR:31blk/MEDIUM | Layout:7seg/MEDIUM | BBox:5/7 | Scripts:latin 
+[037] 37.jpg: SUCCESS |  OCR:20blk/MEDIUM | Layout:5seg/MEDIUM | BBox:4/5 | Scripts:latin 
+[038] 38.jpg: SUCCESS |  OCR:37blk/HIGH | Layout:5seg/MEDIUM | BBox:4/5 | Scripts:latin 
+[039] 39.jpg: SUCCESS |  OCR:13blk/MEDIUM | Layout:2seg/LOW | BBox:1/1 | Scripts:latin 
+[040] 40.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:7seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[041] 41.jpg: SUCCESS |  OCR:10blk/MEDIUM | Layout:6seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[042] 42.jpg: SUCCESS |  OCR:10blk/HIGH | Layout:3seg/HIGH | BBox:3/3 | Scripts:latin 
+[043] 43.jpg: SUCCESS |  OCR:14blk/MEDIUM | Layout:4seg/MEDIUM | BBox:1/4 | Scripts:latin 
+[044] 44.jpg: SUCCESS |  OCR:17blk/MEDIUM | Layout:3seg/LOW | BBox:2/2 | Scripts:latin|devanagari MIXED
+[045] 45.jpg: SUCCESS |  OCR:31blk/MEDIUM | Layout:7seg/MEDIUM | BBox:6/7 | Scripts:latin|devanagari MIXED
+[046] 46.jpg: SUCCESS |  OCR:12blk/MEDIUM | Layout:6seg/MEDIUM | BBox:2/4 | Scripts:latin 
+[047] 47.jpg: SUCCESS |  OCR:7blk/MEDIUM | Layout:6seg/MEDIUM | BBox:2/6 | Scripts:latin 
+[048] 48.jpg: SUCCESS |  OCR:7blk/MEDIUM | Layout:0seg/LOW | BBox:0/0 | Scripts:latin 
+[049] 49.jpg: SUCCESS |  OCR:6blk/MEDIUM | Layout:6seg/LOW | BBox:1/1 | Scripts:latin 
+[050] 50.jpg: SUCCESS |  OCR:8blk/HIGH | Layout:3seg/MEDIUM | BBox:2/2 | Scripts:latin 
+[051] 51.jpg: SUCCESS |  OCR:35blk/MEDIUM | Layout:1seg/LOW | BBox:0/0 | Scripts:latin 
+[052] 52.jpg: SUCCESS |  OCR:13blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[053] 53.jpg: SUCCESS |  OCR:60blk/MEDIUM | Layout:8seg/MEDIUM | BBox:3/7 | Scripts:latin 
+[054] 54.jpg: SUCCESS |  OCR:20blk/HIGH | Layout:7seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[055] 55.jpg: SUCCESS |  OCR:24blk/MEDIUM | Layout:8seg/LOW | BBox:4/6 | Scripts:latin 
+[056] 56.jpg: SUCCESS |  OCR:21blk/MEDIUM | Layout:7seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[057] 57.jpg: SUCCESS |  OCR:11blk/MEDIUM | Layout:5seg/MEDIUM | BBox:2/5 | Scripts:latin 
+[058] 58.jpg: SUCCESS |  OCR:19blk/MEDIUM | Layout:5seg/MEDIUM | BBox:3/5 | Scripts:latin 
+[059] 59.jpg: SUCCESS |  OCR:23blk/MEDIUM | Layout:7seg/MEDIUM | BBox:7/7 | Scripts:latin 
+[060] 60.jpg: SUCCESS |  OCR:27blk/MEDIUM | Layout:8seg/MEDIUM | BBox:6/7 | Scripts:latin 
+[061] 61.jpg: SUCCESS |  OCR:15blk/HIGH | Layout:7seg/MEDIUM | BBox:5/6 | Scripts:latin 
+[062] 62.jpg: SUCCESS |  OCR:17blk/MEDIUM | Layout:5seg/MEDIUM | BBox:3/5 | Scripts:latin 
+[063] 63.jpg: SUCCESS |  OCR:15blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[064] 64.jpg: SUCCESS |  OCR:15blk/MEDIUM | Layout:2seg/LOW | BBox:1/1 | Scripts:latin 
+[065] 65.jpg: SUCCESS |  OCR:14blk/HIGH | Layout:6seg/HIGH | BBox:4/5 | Scripts:latin 
+[066] 66.jpg: SUCCESS |  OCR:57blk/HIGH | Layout:5seg/MEDIUM | BBox:3/4 | Scripts:latin|devanagari MIXED
+[067] 67.jpg: SUCCESS |  OCR:26blk/MEDIUM | Layout:7seg/MEDIUM | BBox:6/7 | Scripts:latin 
+[068] 68.jpg: SUCCESS |  OCR:28blk/HIGH | Layout:2seg/LOW | BBox:2/2 | Scripts:latin 
+[069] 69.jpg: SUCCESS |  OCR:22blk/MEDIUM | Layout:5seg/LOW | BBox:3/5 | Scripts:latin 
+[070] 70.jpg: SUCCESS |  OCR:10blk/MEDIUM | Layout:6seg/MEDIUM | BBox:3/6 | Scripts:latin 
+[071] 71.jpg: SUCCESS |  OCR:25blk/HIGH | Layout:4seg/LOW | BBox:2/2 | Scripts:latin 
+[072] 72.jpg: SUCCESS |  OCR:36blk/MEDIUM | Layout:6seg/MEDIUM | BBox:5/6 | Scripts:latin|bengali|devanagari MIXED
+[073] 73.jpg: SUCCESS |  OCR:36blk/MEDIUM | Layout:6seg/MEDIUM | BBox:6/6 | Scripts:latin 
+[074] 74.jpg: SUCCESS |  OCR:19blk/MEDIUM | Layout:6seg/MEDIUM | BBox:4/6 | Scripts:latin 
+[075] 75.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98075, Requested 2367. Please try again in 6m21.888s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98075, Requested 2367. Please try again in 6m21.888s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[076] 76.jpg: SUCCESS |  OCR:3blk/MEDIUM | Layout:3seg/MEDIUM | BBox:1/3 | Scripts:latin|devanagari MIXED
+[077] 77.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98860, Requested 1484. Please try again in 4m57.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98860, Requested 1484. Please try again in 4m57.216s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[078] 78.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98857, Requested 1510. Please try again in 5m17.088s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98857, Requested 1510. Please try again in 5m17.088s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[079] 79.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98853, Requested 1517. Please try again in 5m19.68s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98853, Requested 1517. Please try again in 5m19.68s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[080] 80.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98850, Requested 2498. Please try again in 19m24.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98850, Requested 2498. Please try again in 19m24.672s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[081] 81.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98847, Requested 1588. Please try again in 6m15.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98847, Requested 1588. Please try again in 6m15.84s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[082] 82.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98843, Requested 1506. Please try again in 5m1.536s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98843, Requested 1506. Please try again in 5m1.536s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[083] 83.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98829, Requested 1503. Please try again in 4m46.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98829, Requested 1503. Please try again in 4m46.848s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[084] 84.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98825, Requested 1814. Please try again in 9m12.096s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98825, Requested 1814. Please try again in 9m12.096s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[085] 85.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98821, Requested 1716. Please try again in 7m43.967999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98821, Requested 1716. Please try again in 7m43.967999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[086] 86.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98817, Requested 1416. Please try again in 3m21.312s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98817, Requested 1416. Please try again in 3m21.312s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[087] 87.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98814, Requested 1540. Please try again in 5m5.856s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98814, Requested 1540. Please try again in 5m5.856s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[088] 88.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98811, Requested 1567. Please try again in 5m26.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98811, Requested 1567. Please try again in 5m26.592s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[089] 89.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98807, Requested 1506. Please try again in 4m30.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98807, Requested 1506. Please try again in 4m30.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[090] 90.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98804, Requested 1509. Please try again in 4m30.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98804, Requested 1509. Please try again in 4m30.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[091] 91.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98801, Requested 1756. Please try again in 8m1.248s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98801, Requested 1756. Please try again in 8m1.248s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[092] 92.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98797, Requested 1579. Please try again in 5m24.864s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98797, Requested 1579. Please try again in 5m24.864s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[093] 93.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98794, Requested 2337. Please try again in 16m17.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98794, Requested 2337. Please try again in 16m17.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[094] 94.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98791, Requested 1543. Please try again in 4m48.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98791, Requested 1543. Please try again in 4m48.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[095] 95.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98787, Requested 2556. Please try again in 19m20.351999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98787, Requested 2556. Please try again in 19m20.351999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[096] 96.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98784, Requested 2368. Please try again in 16m35.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98784, Requested 2368. Please try again in 16m35.328s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[097] 97.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98781, Requested 1511. Please try again in 4m12.287999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98781, Requested 1511. Please try again in 4m12.287999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[098] 98.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98778, Requested 2474. Please try again in 18m1.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98778, Requested 2474. Please try again in 18m1.728s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[099] 99.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98774, Requested 1693. Please try again in 6m43.488s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98774, Requested 1693. Please try again in 6m43.488s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[100] 100.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98771, Requested 1503. Please try again in 3m56.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98771, Requested 1503. Please try again in 3m56.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[101] 101.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98767, Requested 1432. Please try again in 2m51.936s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98767, Requested 1432. Please try again in 2m51.936s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[102] 102.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98762, Requested 1430. Please try again in 2m45.888s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98762, Requested 1430. Please try again in 2m45.888s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[103] 103.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98759, Requested 1487. Please try again in 3m32.543999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98759, Requested 1487. Please try again in 3m32.543999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[104] 104.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98756, Requested 1440. Please try again in 2m49.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98756, Requested 1440. Please try again in 2m49.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[105] 105.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98752, Requested 2694. Please try again in 20m49.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98752, Requested 2694. Please try again in 20m49.344s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[106] 106.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98749, Requested 1464. Please try again in 3m4.031999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98749, Requested 1464. Please try again in 3m4.031999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[107] 107.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98745, Requested 1476. Please try again in 3m10.944s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98745, Requested 1476. Please try again in 3m10.944s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[108] 108.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98741, Requested 1837. Please try again in 8m19.392s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98741, Requested 1837. Please try again in 8m19.392s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[109] 109.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98738, Requested 1489. Please try again in 3m16.128s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98738, Requested 1489. Please try again in 3m16.128s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[110] 110.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98733, Requested 1444. Please try again in 2m32.928s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98733, Requested 1444. Please try again in 2m32.928s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[111] 111.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98729, Requested 1789. Please try again in 7m27.551999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98729, Requested 1789. Please try again in 7m27.551999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[112] 112.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98726, Requested 2358. Please try again in 15m36.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98726, Requested 2358. Please try again in 15m36.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[113] 113.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98723, Requested 1460. Please try again in 2m38.112s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98723, Requested 1460. Please try again in 2m38.112s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[114] 114.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98720, Requested 1514. Please try again in 3m22.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98720, Requested 1514. Please try again in 3m22.176s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[115] 115.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98716, Requested 1597. Please try again in 4m30.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98716, Requested 1597. Please try again in 4m30.432s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[116] 116.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98713, Requested 1598. Please try again in 4m28.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98713, Requested 1598. Please try again in 4m28.704s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[117] 117.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98710, Requested 1467. Please try again in 2m32.928s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98710, Requested 1467. Please try again in 2m32.928s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[118] 118.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98706, Requested 1516. Please try again in 3m11.808s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98706, Requested 1516. Please try again in 3m11.808s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[119] 119.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98696, Requested 2801. Please try again in 21m33.408s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98696, Requested 2801. Please try again in 21m33.408s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[120] 120.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98693, Requested 1474. Please try again in 2m24.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98693, Requested 1474. Please try again in 2m24.288s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[121] 121.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98689, Requested 1391. Please try again in 1m9.12s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98689, Requested 1391. Please try again in 1m9.12s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[122] 122.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98686, Requested 1420. Please try again in 1m31.584s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98686, Requested 1420. Please try again in 1m31.584s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[123] 123.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98683, Requested 1455. Please try again in 1m59.232s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98683, Requested 1455. Please try again in 1m59.232s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[124] 124.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98679, Requested 1850. Please try again in 7m37.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98679, Requested 1850. Please try again in 7m37.056s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[125] 125.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98676, Requested 2555. Please try again in 17m43.584s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98676, Requested 2555. Please try again in 17m43.584s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[126] 126.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98673, Requested 2363. Please try again in 14m55.103999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98673, Requested 2363. Please try again in 14m55.103999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[127] 127.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98669, Requested 1435. Please try again in 1m29.856s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98669, Requested 1435. Please try again in 1m29.856s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[128] 128.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98659, Requested 2800. Please try again in 21m0.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98659, Requested 2800. Please try again in 21m0.576s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+
+[129] 129.jpg: FAILED | Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98655, Requested 1485. Please try again in 2m0.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+Traceback (most recent call last):
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 273, in main
+    data = process_image(img_path)
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\run_batch.py", line 148, in process_image
+    layout = run_layout_agent(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\agents\layout_agent.py", line 90, in run_layout_agent
+    response = client.chat.completions.create(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\resources\chat\completions.py", line 461, in create
+    return self._post(
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1284, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "C:\Users\KIIT0001\OneDrive - Arkadipta\Desktop\KIIT\KGEC\Final Project\prescription-agent\venv\lib\site-packages\groq\_base_client.py", line 1071, in request
+    raise self._make_status_error_from_response(err.response) from None
+groq.RateLimitError: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01ks7k3hjferfv6axvwp8qag4n` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98655, Requested 1485. Please try again in 2m0.96s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+

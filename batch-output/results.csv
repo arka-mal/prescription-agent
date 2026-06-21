@@ -1,0 +1,130 @@
+image_name,ocr_blocks,ocr_confidence,word_count,mixed_script,scripts_detected,handwritten_blocks,segments_found,layout_confidence,zone_prescriber,zone_patient,zone_drug,zone_dosage,zone_duration,zone_clinical,zone_annotation,bbox_prescriber,bbox_patient,bbox_drug,bbox_dosage,bbox_duration,bbox_clinical,bbox_annotation,conf_prescriber,conf_patient,conf_drug,conf_dosage,conf_duration,conf_clinical,conf_annotation,status,error_msg
+1.jpg,10,medium,32,0,latin,2,6,medium,1,1,1,1,0,0,1,1,0,0,0,0,0,1,high,medium,high,medium,,,low,success,
+2.jpg,23,medium,88,0,latin,14,8,medium,1,1,1,1,1,1,1,1,0,1,0,1,1,1,high,high,high,medium,high,medium,low,success,
+3.jpg,14,medium,45,0,latin,9,4,medium,1,0,1,1,0,0,0,1,0,1,0,0,0,0,medium,,high,medium,,,,success,
+4.jpg,61,medium,196,1,latin|devanagari,18,6,medium,1,1,0,0,0,1,1,0,1,0,0,0,1,1,high,high,,,,medium,high,success,
+5.jpg,15,medium,44,0,latin,10,6,low,1,1,1,1,0,1,1,0,1,0,0,0,1,1,low,low,medium,low,,low,low,success,
+6.jpg,24,medium,57,0,latin,13,7,medium,1,1,1,1,1,0,1,1,1,0,0,0,0,1,high,medium,low,medium,high,,low,success,
+7.jpg,22,medium,108,0,latin,12,7,medium,1,1,1,1,1,1,1,1,1,1,1,1,1,1,high,medium,medium,low,low,low,low,success,
+8.jpg,29,medium,64,0,latin,16,6,medium,1,0,1,1,1,1,1,1,0,1,1,0,1,1,high,,high,high,low,medium,low,success,
+9.jpg,19,high,48,0,latin,0,7,high,1,1,1,1,1,1,1,1,1,0,0,0,0,0,high,high,high,high,medium,low,low,success,
+10.jpg,24,high,153,0,latin,2,5,medium,1,1,0,0,0,1,1,1,1,0,0,0,1,1,high,high,,,,high,low,success,
+11.jpg,22,medium,60,1,latin|devanagari,13,7,medium,1,1,1,1,1,1,1,1,1,1,1,1,1,1,high,medium,high,high,low,medium,low,success,
+12.jpg,8,medium,20,0,latin,6,4,low,0,0,1,1,0,0,1,0,0,0,0,0,0,1,,,medium,medium,,,low,success,
+13.jpg,14,high,44,0,latin,1,2,low,0,1,0,0,0,0,1,0,1,0,0,0,0,1,,medium,,,,,low,success,
+14.jpg,21,medium,98,0,latin,6,8,high,1,1,1,1,1,1,1,1,1,1,1,1,0,0,high,high,high,high,medium,medium,high,success,
+15.jpg,12,high,46,0,latin,4,7,medium,1,1,1,1,1,0,1,1,1,0,0,0,0,1,high,medium,high,high,low,,low,success,
+16.jpg,21,high,42,0,latin,1,5,medium,1,0,1,1,0,1,1,0,0,1,0,0,1,1,high,,high,medium,,medium,low,success,
+17.jpg,23,medium,62,0,latin,6,7,medium,1,1,1,1,1,1,1,1,1,1,1,1,1,1,high,high,high,medium,medium,medium,low,success,
+18.jpg,11,high,23,0,latin,4,6,medium,1,1,1,1,1,0,1,1,1,0,0,0,0,1,low,medium,high,high,medium,,low,success,
+19.jpg,11,medium,38,0,latin,5,3,low,0,1,0,0,0,1,1,0,1,0,0,0,1,0,,medium,,,,low,low,success,
+20.jpg,16,medium,37,0,latin,14,6,medium,1,1,1,1,1,0,0,1,1,1,1,0,0,0,low,medium,high,medium,high,,,success,
+21.jpg,5,medium,58,0,latin,1,2,medium,1,0,0,0,0,1,0,1,0,0,0,0,1,0,high,,,,,high,,success,
+22.jpg,19,medium,79,0,latin,12,3,low,1,1,0,0,0,0,1,1,1,0,0,0,0,1,high,medium,,,,,low,success,
+23.jpg,13,medium,31,0,latin,7,5,medium,0,1,1,1,1,1,0,0,1,1,1,1,1,0,,medium,high,medium,high,high,,success,
+24.jpg,23,medium,52,0,latin,16,5,medium,1,0,1,1,0,1,1,1,0,1,0,0,1,1,high,,medium,low,,medium,low,success,
+25.jpg,15,medium,55,0,latin,6,5,medium,1,1,1,1,0,0,1,1,1,1,0,0,0,1,high,medium,medium,medium,,,low,success,
+26.jpg,24,medium,58,0,latin,9,7,medium,1,1,1,1,1,1,1,1,1,1,0,1,1,1,high,medium,high,medium,low,low,low,success,
+27.jpg,39,medium,192,0,latin,9,4,low,1,0,1,0,0,0,1,1,0,1,0,0,0,1,medium,,high,,,,low,success,
+28.jpg,8,medium,58,0,latin,3,4,high,1,1,1,1,0,0,0,1,1,1,0,0,0,0,high,high,high,high,,,,success,
+29.jpg,31,high,100,0,latin,3,7,medium,1,1,1,1,0,0,1,0,1,1,1,0,0,1,high,high,high,high,,,low,success,
+30.jpg,23,medium,62,0,latin,6,7,medium,1,1,1,1,1,1,1,1,1,1,1,1,1,1,high,high,high,medium,medium,low,low,success,
+31.jpg,13,high,41,0,latin,0,7,high,1,1,1,1,1,0,0,1,1,1,0,0,0,0,high,high,high,high,medium,,,success,
+32.jpg,24,high,74,0,latin,4,8,low,1,1,0,0,0,0,1,1,1,0,0,0,0,0,high,medium,,,,,high,success,
+33.jpg,24,medium,78,0,latin,11,8,medium,1,1,1,1,1,1,1,1,1,1,1,1,1,1,high,medium,medium,medium,medium,medium,low,success,
+34.jpg,5,low,11,0,latin,4,1,low,0,0,0,0,0,0,1,0,0,0,0,0,0,1,,,,,,,low,success,
+35.jpg,15,medium,29,0,latin,5,0,low,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,success,
+36.jpg,31,medium,154,0,latin,21,7,medium,1,1,1,1,1,1,1,1,1,1,0,0,1,1,high,medium,medium,medium,low,medium,low,success,
+37.jpg,20,medium,60,0,latin,9,5,medium,1,1,1,1,0,0,1,1,1,0,1,0,0,1,high,medium,medium,medium,,,low,success,
+38.jpg,37,high,141,0,latin,8,5,medium,1,1,1,0,0,1,1,1,1,0,0,0,1,1,high,high,medium,,,medium,low,success,
+39.jpg,13,medium,57,0,latin,12,2,low,1,0,0,0,0,0,0,1,0,0,0,0,0,0,high,,,,,,,success,
+40.jpg,23,medium,84,0,latin,12,7,medium,1,1,1,1,1,0,1,1,0,0,1,0,0,1,high,medium,high,medium,medium,,low,success,
+41.jpg,10,medium,38,0,latin,4,6,medium,1,1,1,1,0,1,1,1,1,0,0,0,0,1,high,medium,high,medium,,medium,low,success,
+42.jpg,10,high,37,0,latin,0,3,high,1,1,1,0,0,0,0,1,1,1,0,0,0,0,high,high,high,,,,,success,
+43.jpg,14,medium,92,0,latin,7,4,medium,1,1,1,1,0,0,0,1,0,0,0,0,0,0,high,medium,medium,low,,,,success,
+44.jpg,17,medium,41,1,latin|devanagari,15,3,low,0,0,0,0,0,1,1,0,0,0,0,0,1,1,,,,,,low,low,success,
+45.jpg,31,medium,173,1,latin|devanagari,10,7,medium,1,1,1,1,1,1,1,1,1,1,1,0,1,1,high,low,high,medium,medium,medium,low,success,
+46.jpg,12,medium,37,0,latin,4,6,medium,1,1,1,0,0,0,1,1,0,1,0,0,0,0,high,low,medium,,,,low,success,
+47.jpg,7,medium,31,0,latin,5,6,medium,1,1,1,1,1,0,1,1,1,0,0,0,0,0,medium,medium,high,low,medium,,low,success,
+48.jpg,7,medium,22,0,latin,5,0,low,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,success,
+49.jpg,6,medium,13,0,latin,2,6,low,0,0,0,0,0,0,1,0,0,0,0,0,0,1,,,,,,,low,success,
+50.jpg,8,high,60,0,latin,2,3,medium,1,0,0,0,0,1,0,1,0,0,0,0,1,0,high,,,,,medium,,success,
+51.jpg,35,medium,150,0,latin,23,1,low,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,success,
+52.jpg,13,medium,41,0,latin,8,6,medium,1,1,1,1,0,1,1,1,0,1,0,0,1,1,high,low,high,medium,,medium,low,success,
+53.jpg,60,medium,185,0,latin,30,8,medium,1,1,1,1,1,1,1,1,0,0,0,0,1,1,high,medium,low,low,low,medium,low,success,
+54.jpg,20,high,63,0,latin,2,7,medium,1,1,1,1,1,0,1,1,1,0,0,0,0,1,high,high,low,medium,low,,medium,success,
+55.jpg,24,medium,78,0,latin,18,8,low,1,1,1,1,1,1,0,1,1,1,0,0,1,0,low,medium,medium,high,high,low,,success,
+56.jpg,21,medium,53,0,latin,6,7,medium,1,1,1,1,1,0,1,1,1,1,0,0,0,1,high,medium,high,high,medium,,low,success,
+57.jpg,11,medium,31,0,latin,3,5,medium,1,1,1,1,0,0,1,1,0,0,0,0,0,1,high,medium,high,medium,,,low,success,
+58.jpg,19,medium,49,0,latin,14,5,medium,0,0,1,1,1,1,1,0,0,0,1,1,0,1,,,high,medium,medium,high,low,success,
+59.jpg,23,medium,61,0,latin,6,7,medium,1,1,1,1,1,1,1,1,1,1,1,1,1,1,low,medium,high,high,high,medium,low,success,
+60.jpg,27,medium,100,0,latin,10,8,medium,1,1,1,1,1,1,1,1,0,1,1,1,1,1,high,medium,high,medium,medium,low,low,success,
+61.jpg,15,high,68,0,latin,4,7,medium,1,1,1,1,0,1,1,1,1,0,1,0,1,1,high,medium,high,medium,,medium,low,success,
+62.jpg,17,medium,45,0,latin,13,5,medium,1,0,1,1,0,1,1,1,0,0,0,0,1,1,medium,,low,medium,,medium,low,success,
+63.jpg,15,medium,54,0,latin,7,6,medium,1,1,1,1,0,1,1,0,0,1,1,0,1,1,high,high,high,medium,,medium,low,success,
+64.jpg,15,medium,53,0,latin,2,2,low,0,0,0,0,0,0,1,0,0,0,0,0,0,1,,,,,,,high,success,
+65.jpg,14,high,50,0,latin,1,6,high,1,1,1,1,1,0,0,1,1,1,1,0,0,0,high,high,high,high,medium,,,success,
+66.jpg,57,high,191,1,latin|devanagari,15,5,medium,1,1,0,0,0,1,1,0,1,0,0,0,1,1,high,high,,,,medium,high,success,
+67.jpg,26,medium,99,0,latin,12,7,medium,1,1,1,1,1,1,1,1,1,1,1,1,1,0,high,medium,high,high,high,medium,low,success,
+68.jpg,28,high,69,0,latin,0,2,low,1,0,0,0,0,0,1,1,0,0,0,0,0,1,high,,,,,,high,success,
+69.jpg,22,medium,37,0,latin,8,5,low,1,0,1,1,1,0,1,1,0,1,0,0,0,1,low,,high,medium,medium,,low,success,
+70.jpg,10,medium,38,0,latin,4,6,medium,1,1,1,1,0,1,1,1,1,0,0,0,0,1,high,medium,high,medium,,medium,low,success,
+71.jpg,25,high,58,0,latin,2,4,low,1,0,0,0,0,0,1,1,0,0,0,0,0,1,high,,,,,,high,success,
+72.jpg,36,medium,163,1,latin|bengali|devanagari,20,6,medium,1,1,1,1,0,1,1,1,1,1,0,0,1,1,high,medium,high,medium,,medium,low,success,
+73.jpg,36,medium,81,0,latin,15,6,medium,0,1,1,1,1,1,1,0,1,1,1,1,1,1,,high,medium,medium,medium,high,low,success,
+74.jpg,19,medium,75,0,latin,8,6,medium,1,1,1,1,1,0,1,1,0,0,1,1,0,1,high,medium,high,medium,medium,,low,success,
+75.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+76.jpg,3,medium,11,1,latin|devanagari,2,3,medium,0,0,1,1,1,0,0,0,0,0,0,1,0,0,,,high,medium,low,,,success,
+77.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+78.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+79.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+80.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+81.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+82.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+83.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+84.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+85.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+86.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+87.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+88.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+89.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+90.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+91.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+92.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+93.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+94.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+95.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+96.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+97.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+98.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+99.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+100.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+101.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+102.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+103.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+104.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+105.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+106.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+107.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+108.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+109.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+110.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+111.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+112.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+113.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+114.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+115.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+116.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+117.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+118.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+119.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+120.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+121.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+122.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+123.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+124.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+125.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+126.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+127.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+128.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3
+129.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,failed,Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3

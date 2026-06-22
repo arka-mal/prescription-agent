@@ -9,6 +9,7 @@ Output: LayoutResult with labeled fields + bounding box hints
 
 import json
 import re
+import streamlit as st
 from groq import Groq
 from models.rx_schema import LayoutResult, LayoutSegment, ConfidenceLevel
 from typing import Optional
@@ -189,6 +190,10 @@ Return the structured JSON segmentation."""
         for seg in segments:
             seg.bounding_box = _match_segment_to_blocks(seg.raw_text, blocks_to_use)
 
+    # Techinical(debug) output — shown after bbox assignment so values are accurate
+    st.write(f"📊 Layout Analysis: {len(blocks_to_use)} blocks processed → {len(segments)} segments identified")
+    for seg in segments:
+        st.write(f"   • {seg.label}: {'✅ spatially mapped' if seg.bounding_box else '⬜ text only'}")
 
 
     return LayoutResult(

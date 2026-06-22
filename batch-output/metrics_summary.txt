@@ -1,0 +1,40 @@
+============================================================
+  PRESCRIPTION PIPELINE — METRICS SUMMARY
+============================================================
+  Total processed : 129
+  Successful      : 129
+  Failed          : 0
+
+── OCR Statistics ────────────────────────────────────────
+  Avg OCR blocks per image     : 20.9
+  Median OCR blocks per image  : 19.0
+  Avg word count per image     : 71.5
+  OCR Confidence — High        : 24.8%
+  OCR Confidence — Medium      : 72.1%
+  OCR Confidence — Low         : 3.1%
+  Mixed-script prescriptions   : 15 (11.6%)
+
+── Layout Statistics ─────────────────────────────────────
+  Avg segments per image       : 5.3
+  Layout Confidence — High     : 10.1%
+  Layout Confidence — Medium   : 65.1%
+  Layout Confidence — Low      : 24.8%
+
+── Segmentation Coverage Rate ────────────────────────────
+  Prescriber           :  79.8%
+  Patient Header       :  73.6%
+  Drug List            :  71.3%
+  Dosage / Sig         :  67.4%
+  Duration             :  38.0%
+  Clinical Notes       :  58.1%
+  Annotation           :  74.4%
+
+── Bounding Box Assignment Rate ──────────────────────────
+  Prescriber           :  86.4%  (of identified)
+  Patient Header       :  77.9%  (of identified)
+  Drug List            :  56.5%  (of identified)
+  Dosage / Sig         :  44.8%  (of identified)
+  Duration             :  38.8%  (of identified)
+  Clinical Notes       :  81.3%  (of identified)
+  Annotation           :  83.3%  (of identified)
+============================================================

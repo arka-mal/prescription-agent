@@ -20,9 +20,13 @@ import csv
 import time
 import json
 import traceback
+import streamlit as st
 from pathlib import Path
 from dotenv import load_dotenv
 from datetime import datetime
+
+# Redirect Streamlit calls to console output for batch mode
+st.write = lambda *args, **kwargs: print("  [pipeline]", *args)
 
 # ── Load environment variables from .env ──────────────────────────────────────
 load_dotenv()

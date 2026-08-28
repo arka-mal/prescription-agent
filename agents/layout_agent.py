@@ -100,13 +100,23 @@ Return the structured JSON segmentation."""
 
     raw_content = response.choices[0].message.content.strip()
 
+    # Strip thinking tags (gpt-oss-120b uses <think>...</think> blocks)
+    raw_content = re.sub(r"<think>.*?</think>", "", raw_content, flags=re.DOTALL).strip()
+
     # Strip markdown fences if present
     raw_content = re.sub(r"^```(?:json)?\s*", "", raw_content)
     raw_content = re.sub(r"\s*```$", "", raw_content)
 
+    # Extract JSON object if embedded in surrounding text
+    json_match = re.search(r'\{.*\}', raw_content, re.DOTALL)
+    if json_match:
+        raw_content = json_match.group(0)
+
     try:
         data = json.loads(raw_content)
     except json.JSONDecodeError:
+        # Debug: show what the model actually returned
+        st.warning(f"JSON parse failed. Raw response (first 500 chars): {raw_content[:500]}")
         return LayoutResult(
             segments=[
                 LayoutSegment(

@@ -4,7 +4,7 @@ Agentic AI Assignment Demo
 -------------------------------------------------
 Stack:
   OCR/HTR  : Google Cloud Vision (neural perception)
-  Layout   : Groq LLM — llama-3.3-70b (neural segmentation)
+  Layout   : Groq LLM — openai/gpt-oss-120b (neural segmentation)
 """
 
 import os
@@ -101,8 +101,8 @@ with st.sidebar:
     else:
         groq_model = st.selectbox(
             "Groq Model",
-            ["llama-3.3-70b-versatile", "llama3-70b-8192", "mixtral-8x7b-32768"],
-            help="llama-3.3-70b recommended for best extraction quality",
+            ["openai/gpt-oss-120b", "qwen/qwen3.6-27b", "openai/gpt-oss-20b"],
+            help="openai/gpt-oss-120b recommended for best extraction quality",
         )
 
     st.divider()

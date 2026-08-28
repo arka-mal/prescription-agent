@@ -95,7 +95,7 @@ Return the structured JSON segmentation."""
             {"role": "user", "content": user_message},
         ],
         temperature=0.1,
-        max_tokens=2000,
+        max_tokens=5000,
     )
 
     raw_content = response.choices[0].message.content.strip()
@@ -107,10 +107,11 @@ Return the structured JSON segmentation."""
     raw_content = re.sub(r"^```(?:json)?\s*", "", raw_content)
     raw_content = re.sub(r"\s*```$", "", raw_content)
 
-    # Extract JSON object if embedded in surrounding text
-    json_match = re.search(r'\{.*\}', raw_content, re.DOTALL)
-    if json_match:
-        raw_content = json_match.group(0)
+    # Extract JSON object — find the outermost { } pair correctly
+    brace_start = raw_content.find('{')
+    brace_end = raw_content.rfind('}')
+    if brace_start != -1 and brace_end != -1 and brace_end > brace_start:
+        raw_content = raw_content[brace_start:brace_end + 1]
 
     try:
         data = json.loads(raw_content)

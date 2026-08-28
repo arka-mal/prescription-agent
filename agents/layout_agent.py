@@ -60,7 +60,7 @@ Respond ONLY with a valid JSON object in this exact format:
 def run_layout_agent(
     raw_ocr_text: str,
     groq_api_key: str,
-    model: str = "llama-3.3-70b-versatile",
+    model: str = "openai/gpt-oss-120b",
     ocr_blocks: Optional[list] = None,
 ) -> LayoutResult:
     """
